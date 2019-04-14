@@ -37,6 +37,13 @@ ul {
   list-style: none;
 }
 
+
+.wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,4 +56,12 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+@media (min-width: @tablet-width) {
+  .wrap {
+  width: 600px;
+  margin: 0 auto;
+ }
 }
