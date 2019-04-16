@@ -51,12 +51,18 @@
 }
 
 
+.application__slogan {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width) {
   .application {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     background-image: url(../img/bg-back-tablet@1x.jpg);
+    height: 744px;
     }
 
   .application__list {
@@ -71,5 +77,21 @@
 .application__info {
   justify-content: flex-start;
   margin-right: 344px;
+  }
+
+  .application__image-background {
+    display: none;
+  }
+
+  .application__slogan {
+    display: flex;
+    margin-top: 121px;
+    margin-left: 78px;
+    margin-bottom: 39px;
+  }
+
+  .application__title {
+    font-size: 40px;
+    font-weight: 400;
   }
 }

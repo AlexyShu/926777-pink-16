@@ -22,7 +22,18 @@
 }
 
 
+.reviews__icon,
+.reviews__user-data {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width) {
+  .reviews__user-data {
+    display: block;
+    order: 2;
+  }
+
   .reviews__text {
     order: 0;
   }
@@ -32,6 +43,14 @@
   }
 
   .reviews__taggle {
-    order: 2;
+    order: 3;
   }
 }
+
+
+@media (min-width: @desktop-width) {
+  .reviews__icon {
+  display: block;
+ }
+}
+

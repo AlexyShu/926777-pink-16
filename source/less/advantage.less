@@ -44,6 +44,11 @@
 }
 
 
+.advantage__iphone {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width) {
   .advantage_parts {
     display: flex;
@@ -69,3 +74,18 @@
 
 }
 
+
+@media (min-width: @desktop-width) {
+  .advantage__iphone {
+    display: block;
+  }
+
+  .advantage__list {
+    flex-direction: row;
+   }
+
+   .advantage_parts {
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+   }
+}
