@@ -57,3 +57,24 @@
   padding-top: 38px;
   padding-bottom: 41px;
 }
+
+
+@media (min-width: @tablet-width) {
+  .post__display {
+    display: flex;
+  }
+
+  .post__filters {
+    flex-direction: column;
+    order: 1;
+  }
+
+  .post__btn {
+    order: 2;
+  }
+
+  .post__filters-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
