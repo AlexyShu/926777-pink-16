@@ -5,6 +5,16 @@
 }
 
 
+.info__title{
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-left: 51px;
+  margin-right: 50px;
+  margin-bottom: 44px;
+}
+
+
 .info__item-title {
   font-size: 18px;
   font-weight: bold;
@@ -13,4 +23,37 @@
 
 .info__item-contact {
   color: #d22856;
+}
+
+
+.info__list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.info-map {
+  background-image: url(../img/bg-map-mobile@1x.png);
+}
+
+
+@media (min-width: @tablet-width) {
+  .info__list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+ .info-map {
+  background-image: url(../img/bg-map-tablet@1x.jpg);
+  height: 848px;
+ }
+}
+
+
+@media (min-width: @desktop-width) {
+  .info-map {
+  background-image: url(../img/bg-map-desktop@1x.jpg);
+  height: 976px;
+ }
 }

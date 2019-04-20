@@ -1,14 +1,18 @@
 .advantage {
   color: #000000;
-  background-color: #f2f2f2;
 }
 
 .advantage__slogan {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 46px;
+  margin-left: 58px;
+  margin-right: 60px;
+  margin-bottom: 64px;
   background-color: #ffffff;
   color: #283645;
   font-size: 24px;
-  padding-bottom: 119px;
 }
 
 .advantage__title {
@@ -18,4 +22,70 @@
 }
 
 
+.advantage__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding-top: 54px;
+  margin: 0;
+}
 
+
+.advantage__image {
+  margin-top: 45px;
+  margin-left: 82px;
+  margin-right: 81px;
+  margin-bottom: 0;
+}
+
+.advantage__item-image {
+  background-color: #f2f2f2;
+}
+
+
+.advantage__iphone {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .advantage_parts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .advantage__item-image {
+    order: 0;
+  }
+
+ .advantage__list {
+    order: 1;
+  }
+
+  .advantage__image {
+    margin-left: 20px;
+    margin-right: 42px;
+  }
+
+  .advantage__item-image {
+    width: 329px;
+  }
+
+}
+
+
+@media (min-width: @desktop-width) {
+  .advantage__iphone {
+    display: block;
+  }
+
+  .advantage__list {
+    flex-direction: row;
+   }
+
+   .advantage_parts {
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+   }
+}
