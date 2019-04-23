@@ -35,8 +35,8 @@
 .advantage__image {
   margin-top: 45px;
   margin-left: 82px;
-  margin-right: 81px;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .advantage__item-image {
@@ -61,15 +61,28 @@
 
  .advantage__list {
     order: 1;
+    padding-left: 42px;
+    width: 306px;
   }
 
   .advantage__image {
+    width: 268px;
+    height: 547px;
     margin-left: 20px;
-    margin-right: 42px;
+    margin-right: 0;
   }
 
   .advantage__item-image {
     width: 329px;
+  }
+
+  .advantage__slogan {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+    margin-top: 59px;
+    margin-bottom: 50px;
   }
 
 }
@@ -78,6 +91,7 @@
 @media (min-width: @desktop-width) {
   .advantage__iphone {
     display: block;
+    margin-right: 137px;
   }
 
   .advantage__list {
@@ -88,4 +102,25 @@
     flex-wrap: wrap;
     background-color: #f2f2f2;
    }
+
+   .advantage__list {
+    padding-left: 0;
+   }
+
+   .advantage__slogan {
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 78px;
+    margin-bottom: 75px;
+  }
+
+  .advantage__image {
+    width: 169px;
+    height: 298px;
+    margin: 0;
+  }
+
+  .advantage__item {
+    margin-right: 137px;
+  }
 }

@@ -10,7 +10,7 @@
   height: 55px;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
+  margin-top: 56px;
   margin-left: 19px;
   margin-right: 20px;
   margin-bottom: 40px;
@@ -20,6 +20,18 @@
   line-height: 18px;
   border: solid 3px #ffffff;
   border-radius: 28px;
+}
+
+
+.application__btn:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+
+.application__btn:active {
+  color: #f1becc;
+  background-color: #ffffff;
 }
 
 
@@ -37,6 +49,12 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: #283645;
   height: 396px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.application__image {
+  margin-top: 109px;
 }
 
 
@@ -62,9 +80,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-image: url(../img/background-tablet.jpg);
     background-position: center;
-    height: 744px;
+    height: 728px;
     }
 
   .application__list {
@@ -90,10 +108,46 @@
     margin-top: 121px;
     margin-left: 78px;
     margin-bottom: 39px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
   }
 
   .application__title {
+    margin-top: 103px;
+    margin-bottom: 39px;
     font-size: 40px;
     font-weight: 400;
+  }
+
+  .application__btn {
+    margin-top: 0px;
+    margin-bottom: 46px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .application {
+    background-image: url(../img/background-desktop.jpg);
+    height: 854px;
+    }
+
+    .application__title {
+    margin-top: 121px;
+    margin-bottom: 61px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .application__btn {
+    margin-top: 0px;
+    margin-bottom: 67px;
+  }
+
+  .application__list {
+    margin-bottom: 60px;
   }
 }

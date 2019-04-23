@@ -9,6 +9,7 @@
   background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
+
 }
 
 
@@ -48,8 +49,42 @@
 }
 
 
+.features__icon-yes {
+  fill: #3dc644;
+}
+
+
+.features__icon-no {
+  fill: #f25b26;
+}
+
+
+.features_box-headen {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .features__table {
-  width: 100%;
+  width: 620px;
+  margin-left: 22px;
+  margin-bottom: 70px;
+  }
+
+  .features__headen {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  .features_box-headen {
+    display: block;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .features__table {
+  width: 940px;
+  margin-left: 130px;
+  margin-bottom: 98px;
   }
 }
