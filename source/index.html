@@ -22,10 +22,22 @@
            </div>
             <nav class="main-navigation">
               <ul class="main-navigation__list site-list">
-                  <li><a class="main-navigation__item-active site-list__index" href="">Главная</a></li>
-                  <li><a class="main-navigation__item site-list__photos" href="photo-pink.html">Фотографии</a></li>
-                  <li><a class="main-navigation__item site-list__form" href="">Конкурс</a></li>
-                  <li><a class="main-navigation__item site-list__academy" href="">HTML Academy</a></li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link-active site-list__index" href="">Главная
+                    </a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link site-list__photos" href="photo-pink.html">Фотографии
+                    </a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link site-list__form" href="">Конкурс
+                    </a>
+                  </li>
+                  <li class="main-navigation__item">
+                    <a class="main-navigation__link site-list__academy" href="">HTML Academy
+                    </a>
+                  </li>
                </ul>
             </nav>
         </header>
@@ -69,21 +81,24 @@
             <p class="application__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </section>
           <section class="advantage">
-            <p class="advantage__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+            <div class="advantage__slogan">
+            <p class="advantage__slogan-item1">Устали от серости мегаполиса?</p>
+            <p class="advantage__slogan-item2">Нам есть, что вам предложить!</p>
+            </div>
             <div class="advantage_parts">
                <ul class="advantage__list">
                  <li class="advantage__item advantage__advice">
                    <h1 class="advantage__title">Поднимает настроение</h1>
-                   <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                   <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                    </p>
                  </li>
                  <li class="advantage__item advantage__advice">
                    <h1 class="advantage__title">Меняет мир вокруг</h1>
-                   <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                   <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                  </li>
                  <li class="advantage__item advantage__advice">
                    <h1 class="advantage__title">Заводит новых друзей</h1>
-                   <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                   <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                  </li>
                </ul>
                  <div class="advantage__iphone">
@@ -93,7 +108,7 @@
                    <img class="" src="img/iphone-screen-2-tablet@1x.png" width="169" height="298">
                  </div>
                  <div class="advantage__item-image">
-                   <img class="advantage__image" src="img/iphone-screen-3-tablet@1x.png" width="157" height="320">
+                   <img class="advantage__image" src="img/iphone-screen-3-tablet@1x.png" width="157" height="280">
                  </div>
             </div>
           </section>
@@ -123,8 +138,18 @@
             <h2 class="reviews__user-name">Николай Петров</h2>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             <p class="reviews__user-data">25 лет, водитель трамвая</p>
-            <button class="reviews__taggle" type="button">
-            </button>
+
+              <div class="reviews__slider">
+                 <input class="reviews__input" type="radio" name="slider">
+                 <input class="reviews__input" type="radio" name="slider">
+                 <input class="reviews__input" type="radio" name="slider">
+                   <div class="reviews__slider-wrapper">
+                   <label></label>
+                   <label></label>
+                   <label></label>
+                 </div>
+              </div>
+
           </section>
           <section class="features">
             <table class="features__table">
@@ -145,17 +170,17 @@
               </tr>
               <tr class="features_list">
                 <td class="features_box features_item">Розовый фильтр</td>
-                <td class="features_box features_box-headen">
+                <td class="features_box features_box-headen" align="right">
                   <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
                 </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                    <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
                 </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                   <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
@@ -163,17 +188,17 @@
               </tr>
               <tr class="features_list">
                 <td class="features_box features_item">Смайлики</td>
-                <td class="features_box features_box-headen">
+                <td class="features_box features_box-headen" align="right">
                    <svg class="features__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26" height="25px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                      </svg>
                  </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                   <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
                 </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                   <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
@@ -181,26 +206,35 @@
               </tr>
               <tr class="features_list">
                 <td class="features_box features_item">Комментарии</td>
-                <td class="features_box features_box-headen">
+                <td class="features_box features_box-headen" align="right">
                   <svg class="features__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="25px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                      </svg>
                 </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                   <svg class="features__icon-no" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="25px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                      <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                      </svg>
                 </td>
-                <td class="features_box">
+                <td class="features_box" align="right">
                   <svg class="features__icon-yes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                     <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                    </svg>
                 </td>
               </tr>
             </table>
-             <div class="features__taggle-btn">
-              <button class="features__taggle" type="button">
-              </button>
+
+              <div class="features__slider">
+                 <input class="features__input" type="radio" name="slider">
+                 <input class="features__input" type="radio" name="slider">
+                 <input class="features__input" type="radio" name="slider">
+                   <div class="features__slider-wrapper">
+                   <label></label>
+                   <label></label>
+                   <label></label>
+                 </div>
+              </div>
+
             </div>
           </section>
           <section class="info">
