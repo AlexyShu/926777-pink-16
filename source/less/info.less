@@ -1,4 +1,6 @@
 .info {
+  display: flex;
+  flex-direction: column;
   color: #283645;
   font-size: 24px;
   font-weight: 400;
@@ -9,7 +11,7 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  margin-top: 78px;
+  margin-top: 45px;
   margin-left: 47px;
   margin-right: 47px;
   margin-bottom: 21px;
@@ -30,12 +32,12 @@
 }
 
 
-.info__item-contact:hover {
+.info__mail:hover {
   color: #283645;
 }
 
 
-.info__item-contact:active {
+.info__mail:active {
   color: #bec2c7;
 }
 
@@ -43,7 +45,9 @@
 .info__list {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 
@@ -62,7 +66,7 @@
 
  .info-map {
   background-image: url(../img/bg-map-tablet@1x.jpg);
-  height: 848px;
+  height: 365px;
  }
 
  .info__title {
@@ -73,17 +77,77 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 57px;
+  margin-top: 42px;
+  margin-bottom: 25px;
  }
 
+ .info__item-phone {
+  margin-right: 43px;
+ }
 
+ .info__item-mail {
+  margin-right: 26px;
+ }
+
+ .info__item-address {
+    margin-top: 26px;
+    margin-right: 47px;
+    margin-left: 4px;
+ }
 }
 
 
 @media (min-width: @desktop-width) {
   .info-map {
   background-image: url(../img/bg-map-desktop@1x.jpg);
-  height: 976px;
+  height: 501px;
+  margin-bottom: 30px;
+ }
+
+ .info__title {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  margin-left: 313px;
+  margin-right: 311px;
+  margin-bottom: 12px;
+  margin-top: 0;
+ }
+
+ .info {
+  flex-direction: column;
+ }
+
+ .info__list {
+  justify-content: space-around;
+  margin-bottom: 7px;
+  margin-top: 46px;
+  padding-left: 57px;
+  padding-right: 22px;
+ }
+
+ .info__item-phone {
+  order: 1;
+  margin-left: 87px;
+ }
+
+ .info__item-address {
+  order: 2;
+  margin-top: 0;
+ }
+
+ .info__item-mail {
+  order: 3;
+  margin-right: 110px;
+ }
+
+ .info__item-title {
+  text-align: center;
+ }
+
+ .info__item-contact {
+  text-align: left;
+  margin-top: 24px;
  }
 }

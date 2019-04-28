@@ -57,25 +57,37 @@
    .main-navigation__list {
     flex-direction: row;
     justify-content: space-between;
-    width: 945px;
+    width: 820px;
   }
 
   .main-navigation {
     min-height: 110px;
   }
 
-  .main-navigation__list li {
+ .main-navigation__item {
     border: none;
     padding-top: 47px;
   }
+
+  .main-navigation__link,
+  .main-navigation__link-active {
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
 
   .main-navigation__link:hover {
    color: #d22856;
   }
 
   .main-navigation__link:active {
-    color: #ffffff;
+    color: #767d85;
+  }
+
+  .main-navigation__link-active {
+   color: #ffffff;
    border-bottom: 2px solid #ffffff;
   }
 }
+
 

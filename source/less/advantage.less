@@ -7,7 +7,7 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 17px;
   margin-left: 56px;
   margin-right: 60px;
   margin-bottom: 0px;
@@ -30,16 +30,29 @@
   margin-bottom: 28px;
 }
 
+.advantage_parts {
+  display: flex;
+  flex-direction: column;
+}
 
 .advantage__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+  text-align: center;
   background-color: #f2f2f2;
-  padding-top: 109px;
+  padding-top: 87px;
+  padding-left: 25px;
+  padding-right: 37px;
   margin: 0;
+  order: 1;
 }
 
+.advantage__iphones {
+  order: 2;
+  background-color: #f2f2f2;
+}
 
 .advantage__image {
   margin-top: 12px;
@@ -53,25 +66,34 @@
 }
 
 
-.advantage__iphone {
+.advantage__iphone1,
+.advantage__iphone2 {
   display: none;
+}
+
+
+.advantage__slogan-item2 {
+  margin-top: 7px;
 }
 
 
 @media (min-width: @tablet-width) {
   .advantage_parts {
-    display: flex;
-    justify-content: center;
+    flex-direction: row;
+    background-color: #f2f2f2;
   }
 
-  .advantage__item-image {
-    order: 0;
+  .advantage__iphones {
+  order: 1;
   }
 
  .advantage__list {
-    order: 1;
-    width: 331px;
+    width: 329px;
+    justify-content: space-between;
     padding: 0;
+    margin-left: 42px;
+    order: 2;
+    text-align: left;
   }
 
   .advantage__image {
@@ -104,52 +126,133 @@
   }
 
   .advantage__title {
-    margin: 0;
-  }
-
-  .advantage__title {
-    margin-bottom: 14px;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
     .advantage__text {
-    margin-bottom: 22px;
+    margin-bottom: 0px;
     margin-top: 0;
+    margin-right: 36px;
+  }
+
+  .advantage__item1 {
+    padding-top: 90px;
+  }
+
+  .advantage__item3 {
+    padding-bottom: 54px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
-  .advantage__iphone {
+  .advantage__iphone1,
+  .advantage__iphone2,
+  .advantage__iphone3 {
     display: block;
-    margin-right: 137px;
+    width: 400px;
   }
 
-  .advantage__list {
-    flex-direction: row;
+  .advantage__iphone1 {
+    padding-left: 130px;
    }
 
-   .advantage_parts {
-    flex-wrap: wrap;
-    background-color: #f2f2f2;
+  .advantage__iphone2 {
+      padding-left: 53px;
    }
 
-   .advantage__list {
-    padding-left: 0;
+   .advantage__iphone3 {
+      padding-left: 37px;
    }
 
-   .advantage__slogan {
-    font-size: 50px;
-    font-weight: 300;
-    margin-top: 78px;
-    margin-bottom: 75px;
-  }
-
-  .advantage__image {
+     .advantage__image {
     width: 169px;
     height: 298px;
     margin: 0;
   }
 
-  .advantage__item {
-    margin-right: 137px;
+  .advantage__iphone-img {
+    width: 169px;
+  }
+
+  .advantage__list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+   }
+
+   .advantage_parts {
+    flex-direction: column;
+    background-color: #f2f2f2;
+   }
+
+   .advantage__iphones {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+   }
+
+   .advantage__list {
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 120px
+   }
+
+   .advantage__slogan {
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
+  .advantage__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .advantage__text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .advantage__item1,
+  .advantage__item2,
+  .advantage__item3 {
+    margin-top: 54px;
+  }
+
+  .advantage__item1 {
+    width: 260px;
+    padding-top: 0px;
+  }
+
+  .advantage__item2 {
+    width: 250px;
+  }
+
+  .advantage__item3 {
+    width: 262px;
+    padding-bottom: 0px;
+  }
+
+  .advantage__slogan-item2 {
+    margin-left: 383px;
+    margin-right: 382px;
+    margin-bottom: 3px;
+  }
+
+  .advantage__title-desctop {
+    margin-left: 22px;
+    margin-right: 15px
   }
 }
