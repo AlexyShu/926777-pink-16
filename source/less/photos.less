@@ -98,7 +98,9 @@
   margin-bottom: 9px;
 }
 
-
+.photos__image img {
+  display: block;
+}
 
 @media (min-width: @tablet-width) {
   .photos__panorama-image {
@@ -112,7 +114,16 @@
 
   .photos__item {
     width: 50%;
+
+    &:nth-child(even) {
+      padding-right: 10px;
+    }
+
+    &:nth-child(odd) {
+      padding-left: 10px;
+    }
   }
+
 
   .photos__title {
   font-size: 50px;
@@ -141,28 +152,14 @@
     margin-bottom: 73px;
   }
 
-  .photos__wrap-Anna {
-    padding-top: 6px;
-    padding-left: 10px;
-    order: 1;
-  }
-
   .photos__info {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 100%;
     margin-bottom: 46px;
-  }
+    margin-left: 0;
 
-  .photos__comment-Anna {
-    order: 3;
-    padding-left: 9px;
-    padding-right: 73px;
-  }
-
-  .photos__rating-Anna {
-    order: 2;
-    padding-top: 17px;
-    padding-left: 301px;
   }
 
   .photos__image {
@@ -173,47 +170,6 @@
     width: 300px;
     height: 300px;
   }
-
-  .photos__user-Levon,
-  .photos__user-Boris,
-  .photos__user-Maksim {
-    margin-left: 19px;
-  }
-
-  .photos__user-Anton,
-  .photos__user-Sergey,
-  .photos__user-Nadezhda {
-    margin-left: 10px;
-  }
-
- .photos__wrap-Levon,
- .photos__wrap-Boris,
- .photos__wrap-Maksim {
-    padding-top: 6px;
-  }
-
-  .photos__wrap-Anton,
-  .photos__wrap-Sergey,
-  .photos__wrap-Nadezhda {
-    padding-top: 6px;
-  }
-
- .photos__info-Levon {
-    width: 300px;
-    padding-bottom: 24px;
-    margin-bottom: 19px;
-    padding-left: 28px;
- }
-
- .photos__comment-Levon {
-    margin-bottom: 12px;
- }
-
- .photos__info-Anton {
-  width: 300px;
-    padding-bottom: 73px;
-  }
-
 }
 
 
