@@ -41,9 +41,9 @@
   background-color: #f2f2f2;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 6px;
   padding-left: 18px;
   padding-bottom: 19px;
 }
@@ -172,8 +172,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-height: 159px;
     height: 100%;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     margin-left: 0;
     margin-right: 0;
 
@@ -201,13 +202,14 @@
     flex-wrap: wrap;
     height: 100%;
     margin-bottom: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
   }
 
   .photos__wrap-panorama {
     order: 1;
+    padding-top: 8px;
   }
 
   .photos__rating-panorama {
@@ -224,13 +226,12 @@
   }
 
   .photos__user-panorama {
-    padding-top: 24px;
     padding-left: 8px;
   }
 
   .photos__info-wrap {
     padding-left: 8px;
-    padding-top: 13px;
+    padding-top: 8px;
   }
 
   .photos__comment {
@@ -243,5 +244,75 @@
   .photos__item {
     width: 30%;
     flex-grow: 1;
+  }
+
+  .photos__title {
+    padding-left: 393px;
+    padding-right: 391px;
+    padding-top: 55px;
+  }
+
+  .photos__image-background {
+    height: 285px;
+  }
+
+  .photos__slogan {
+    margin-top: 91px;
+    margin-left: 285px;
+    margin-right: 300px;
+    margin-bottom: 87px;
+  }
+
+  .photos_wrap {
+    padding: 0px 131px;
+  }
+
+  .photos__wrap-panorama {
+    padding-top: 6px;
+  }
+
+  .photos__rating-panorama {
+    margin-top: 18px;
+  }
+
+  .photos__comment-panorama {
+    padding-right: 0;
+  }
+
+  .photos__info-panorama {
+    padding-bottom: 13px;
+  }
+
+  .photos__image img {
+    width: 300px;
+    height: 400px;
+  }
+
+.photos__item:nth-child(even) {
+    padding-left: 6px;
+  }
+
+
+  .photos__item:nth-child(3) {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.photos__item:nth-child(4) {
+    padding-right: 12px;
+    padding-left: 0;
+}
+
+.photos__item:nth-child(5) {
+    padding-left: 6px;
+    padding-right: 0;
+}
+
+.photos__item:last-child {
+    padding-left: 13px;
+  }
+
+  .photos__info {
+    margin-bottom: 52px;
   }
 }
