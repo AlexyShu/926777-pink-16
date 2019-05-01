@@ -10,7 +10,7 @@
   padding-bottom: 49px;
   padding-left: 32px;
   padding-right: 35px;
-  padding-bottom: 48px;
+  padding-bottom: 29px;
 }
 
 
@@ -19,7 +19,9 @@
   font-size: 18px;
   line-height: 18px;
   border: solid 3px #d22856;
-  border-radius: 15px;
+  border-radius: 27px;
+  width: 280px;
+  height: 55px;
   margin-left: 18px;
   margin-right: 20px;
   margin-bottom: 12px;
@@ -31,7 +33,9 @@
   font-size: 18px;
   line-height: 18px;
   border: solid 3px rgba(40, 54, 69, 0.1);
-  border-radius: 15px;
+  border-radius: 27px;
+  width: 280px;
+  height: 55px;
   margin-left: 18px;
   margin-right: 20px;
 }
@@ -41,13 +45,15 @@
   padding-top: 20px;
   padding-left: 18px;
   padding-right: 20px;
-  padding-bottom: 42px;
+  margin-bottom: 27px;
 }
 
 
 .post__filters {
   display: flex;
   justify-content: center;
+  margin-top: 0;
+  padding-left: 10px;
 }
 
 
@@ -58,23 +64,236 @@
   padding-bottom: 41px;
 }
 
+.post__text1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.post__text2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.post__filters-btn {
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.post__filters-icon {
+  margin-right: 23px;
+}
+
+.post__icon-3 {
+  margin-top: 8px;
+}
+
+.post__range-controls {
+    position: relative;
+    padding-top: 16px;
+    margin-bottom: 33px;
+    margin-left: 38px;
+}
+
+.post__scale {
+    width: 240px;
+    height: 2px;
+    background: #000;
+
+}
+
+.post__toggle {
+    position: absolute;
+    top: 8px;
+    left: 192px;
+    width: 14px;
+    height: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+}
+
+.post__range-tablet {
+  display: none;
+}
+
+
 
 @media (min-width: @tablet-width) {
   .post__display {
     display: flex;
+    padding-bottom: 14px;
   }
 
   .post__filters {
-    flex-direction: column;
     order: 1;
+    flex-direction: column;
+    margin-top: 57px;
+    margin-left: 29px;
   }
 
   .post__btn {
     order: 2;
+    padding-top: 35px;
+    padding-left: 23px;
   }
 
   .post__filters-items {
     display: flex;
     flex-direction: column;
+  }
+
+  .post__text1,
+  .post__text2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .post__text1 {
+    margin-top: 44px;
+  }
+
+  .post__slogan {
+    padding-bottom: 50px;
+  }
+
+  .post__image {
+    padding-top: 56px;
+    padding-right: 0px;
+    height: 456px;
+  }
+
+  .post__filters-icon {
+    display: flex;
+    min-height: 70px;
+  }
+
+  .post__range-controls {
+    display: none;
+  }
+
+  .post__range-tablet {
+    display: block;
+    position: relative;
+    padding-top: 18px;
+    margin-bottom: 33px;
+    margin-left: 27px;
+  }
+
+.post__scale-tablet {
+    width: 202px;
+    height: 2px;
+    background: #000;
+
+  }
+
+.post__toggle1,
+.post__toggle2,
+.post__toggle3 {
+    position: absolute;
+    top: 12px;
+    width: 14px;
+    height: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+
+.post__toggle1 {
+    left: 138px;
+ }
+
+.post__toggle2 {
+    left: 18px;
+ }
+
+.post__toggle3 {
+    left: 101px;
+ }
+
+.post__svg {
+   width: 22px;
+   height: 22px;
+ }
+
+ .post__btn-on,
+ .post__btn-off {
+    width: 261px;
+    margin-left: 24px;
+    margin-right: 23px;
+ }
+
+ .post__btn-off {
+  margin-top: 11px;
+ }
+
+}
+
+
+
+@media (min-width: @desktop-width) {
+  .post__text1 {
+    margin-top: 3px;
+  }
+
+  .post {
+    margin: 0 129px;
+  }
+
+  .post__image {
+    margin-left: 62px;
+  }
+
+  .post__filters {
+    margin-left: 84px;
+  }
+
+  .post__svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .post__scale-tablet {
+    width: 289px;
+  }
+
+  .post__range-tablet {
+    margin-left: 30px;
+  }
+
+  .post__toggle1 {
+    left: 72px;
+  }
+
+  .post__toggle2 {
+    left: 247px;
+  }
+
+  .post__toggle3 {
+    left: 162px;
+  }
+
+  .post__btn {
+    display: flex;
+    flex-direction: row;
+    padding-top: 110px;
+  }
+
+  .post__btn-on {
+    width: 185px;
+    margin-left: 65px;
+  }
+
+  .post__btn-off {
+    width: 185px;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .post__display {
+    padding-bottom: 3px;
+    margin-bottom: 62px;
   }
 }

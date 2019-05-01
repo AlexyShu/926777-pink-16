@@ -1,5 +1,6 @@
 .features {
   background-color: #f2f2f2;
+  padding-bottom: 35px;
 }
 
 
@@ -20,7 +21,7 @@
 .features__title {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -32,7 +33,26 @@
 
 
 .features_box {
-  border-bottom: solid 2px #e5e5e5;
+  height: 58px;
+  width: 276px;
+  text-align: center;
+}
+
+.features_box-mobile {
+  text-align: left;
+}
+
+.features__line {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 39px;
+}
+
+
+.features_box-headen {
+  display: none;
+  height: 58px;
 }
 
 
@@ -45,11 +65,117 @@
 
 .features__table {
   width: 300%;
+  margin-bottom: 43px;
+}
+
+
+.features__icon-yes {
+  fill: #3dc644;
+}
+
+
+.features__icon-no {
+  fill: #f25b26;
+}
+
+
+.features__slider {
+  margin-left: 132px;
+}
+
+
+.features__input {
+  display: none;
+}
+
+
+.features__slider-wrapper label {
+    display: inline-block;
+    vertical-align: top;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 20px;
+    opacity: 0.3;
+    background-color: #283645;
 }
 
 
 @media (min-width: @tablet-width) {
   .features__table {
-  width: 100%;
+  width: 620px;
+  margin-left: 18px;
+  padding-bottom: 0px;
+  text-align: center;
+  }
+
+  .features__headen {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  .features_box-headen {
+    display: block;
+  }
+
+  .features_box {
+  height: 43px;
+}
+
+  .features__title {
+    margin-top: 10px;
+  }
+
+  .features__price {
+    padding-bottom: 6px;
+  }
+
+  .features__slider {
+    display: none;
+  }
+
+  .features_item {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0;
+  }
+
+  .features__icon-headen {
+     margin-top: 9px;
+  }
+
+  .features__line {
+    display: none;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .features__table {
+  width: 940px;
+  margin-left: 130px;
+  padding-bottom: 15px;
+  margin-bottom: 108px;
+  }
+
+  .features__promo {
+    text-align: center;
+        height: 98px;
+  }
+
+  .features_item {
+    width: 232px;
+    padding-right: 56px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features_box {
+    text-align: center;
+    height: 60px;
+  }
+
+  .features__icon-headen {
+     margin-top: 18px;
   }
 }

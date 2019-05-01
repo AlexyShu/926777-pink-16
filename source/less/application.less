@@ -13,7 +13,7 @@
   margin-top: 28px;
   margin-left: 19px;
   margin-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
@@ -23,19 +23,38 @@
 }
 
 
+.application__btn:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+
+.application__btn:active {
+  color: #f1becc;
+  background-color: #ffffff;
+}
+
+
 .application__info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 45px;
-  margin-right: 46px;
-  padding-bottom: 35px;
+  margin-right: 22px;
+  padding-bottom: 26px;
 }
 
 
 .application__image-background {
   background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: #283645;
   height: 396px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.application__image {
+  margin-top: 109px;
 }
 
 
@@ -47,7 +66,8 @@
 
 
 .application__item {
-  margin: auto;
+  margin-left: 17px;
+  margin-right: 18px;
 }
 
 
@@ -61,12 +81,17 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(../img/bg-back-tablet@1x.jpg);
-    height: 744px;
-    }
+    background-image: url(../img/background-tablet.jpg);
+    background-position: center;
+    height: 619px;
+    margin-bottom: 51px;
+  }
+
+
 
   .application__list {
     justify-content: flex-start;
+    margin-left: 27px;
    }
 
  .application__item {
@@ -76,7 +101,11 @@
 
 .application__info {
   justify-content: flex-start;
-  margin-right: 344px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 317px;
+  margin-left: 22px;
+  margin-top: 12px;
   }
 
   .application__image-background {
@@ -85,13 +114,69 @@
 
   .application__slogan {
     display: flex;
-    margin-top: 121px;
+    margin-top: 92px;
     margin-left: 78px;
     margin-bottom: 39px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
   }
 
   .application__title {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 40px;
     font-weight: 400;
+    text-align: center;
+  }
+
+  .application__btn {
+    margin-top: 0px;
+    margin-bottom: 32px;
+    width: 300px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .application {
+    background-image: url(../img/background-desktop.jpg);
+    height: 742px;
+    }
+
+    .application__title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 92px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .application__btn {
+    margin-top: 0px;
+    margin-bottom: 57px;
+    margin-left: 131px;
+  }
+
+  .application__list {
+    margin-bottom: 35px;
+    margin-left: 138px;
+  }
+
+  .application__slogan {
+   margin-bottom: 54px;
+   margin-left: 68px;
+  }
+
+  .advantage__iphone-img {
+    width: 200px;
+    margin-left: 62px;
+  }
+
+  .application__info {
+    margin-left: 133px;
+    margin-right: 704px;
   }
 }
