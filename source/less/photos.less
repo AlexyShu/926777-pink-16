@@ -36,7 +36,8 @@
 }
 
 
-.photos__info {
+.photos__info,
+.photos__info-panorama {
   background-color: #f2f2f2;
   margin-right: 20px;
   margin-left: 20px;
@@ -48,7 +49,8 @@
 }
 
 
-.photos__user-name {
+.photos__user-name,
+.photos__user-panorama {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -88,12 +90,14 @@
   width: 100%;
 }
 
-.photos__info-wrap {
+.photos__info-wrap,
+.photos__wrap-panorama {
   display: flex;
   align-items: baseline;
 }
 
-.photos__comment {
+.photos__comment,
+.photos__comment-panorama {
   margin-top: 0;
   margin-bottom: 9px;
 }
@@ -102,7 +106,17 @@
   display: block;
 }
 
+.photos__panorama-image {
+  display: block;
+}
+
+
+
 @media (min-width: @tablet-width) {
+  .photos_wrap {
+    padding: 0 20px;
+  }
+
   .photos__panorama-image {
   height: 509px;
   }
@@ -113,14 +127,16 @@
   }
 
   .photos__item {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 
     &:nth-child(even) {
-      padding-right: 10px;
+      padding-left: 10px;
     }
 
     &:nth-child(odd) {
-      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -130,7 +146,7 @@
   font-weight: 300;
   line-height: normal;
   text-align: center;
-  padding-top: 72px;
+  padding-top: 64px;
   padding-left: 73px;
   margin: 0;
   }
@@ -159,6 +175,7 @@
     height: 100%;
     margin-bottom: 46px;
     margin-left: 0;
+    margin-right: 0;
 
   }
 
@@ -169,6 +186,52 @@
   .photos__image img {
     width: 300px;
     height: 300px;
+  }
+
+    .photos__rating {
+    margin-right: auto;
+    padding-left: 8px;
+  }
+
+  .photos__info-panorama {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photos__wrap-panorama {
+    order: 1;
+  }
+
+  .photos__rating-panorama {
+    order: 2;
+    margin-left: auto;
+    margin-right: 62px;
+    margin-top: 24px;
+  }
+
+  .photos__comment-panorama {
+    order: 3;
+    padding-left: 9px;
+    padding-right: 102px;
+  }
+
+  .photos__user-panorama {
+    padding-top: 24px;
+    padding-left: 8px;
+  }
+
+  .photos__info-wrap {
+    padding-left: 8px;
+    padding-top: 13px;
+  }
+
+  .photos__comment {
+    padding-left: 8px;
   }
 }
 
