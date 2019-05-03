@@ -7,11 +7,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-align: center;
   padding: 0;
-  margin-top: 54px;
+  margin-top: 43px;
   margin-left: 40px;
   margin-right: 39px;
-  margin-bottom: 97px;
+  margin-bottom: 50px;
 }
 
 
@@ -35,17 +36,21 @@
 }
 
 
-.photos__info {
+.photos__info,
+.photos__info-panorama {
   background-color: #f2f2f2;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   margin-top: 0;
-  padding: 0;
+  padding-top: 6px;
+  padding-left: 18px;
+  padding-bottom: 19px;
 }
 
 
-.photos__user-name {
+.photos__user-name,
+.photos__user-panorama {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -57,6 +62,8 @@
 .photos__public-date {
   font-size: 12px;
   text-transform: uppercase;
+  padding-left: 4px;
+  margin-bottom: 0px;
 }
 
 
@@ -64,6 +71,7 @@
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
+  margin: 0;
 }
 
 
@@ -82,8 +90,33 @@
   width: 100%;
 }
 
+.photos__info-wrap,
+.photos__wrap-panorama {
+  display: flex;
+  align-items: baseline;
+}
+
+.photos__comment,
+.photos__comment-panorama {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.photos__image img {
+  display: block;
+}
+
+.photos__panorama-image {
+  display: block;
+}
+
+
 
 @media (min-width: @tablet-width) {
+  .photos_wrap {
+    padding: 0 20px;
+  }
+
   .photos__panorama-image {
   height: 509px;
   }
@@ -94,7 +127,115 @@
   }
 
   .photos__item {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+
+    &:nth-child(even) {
+      padding-left: 10px;
+    }
+
+    &:nth-child(odd) {
+      padding-right: 10px;
+    }
+  }
+
+
+  .photos__title {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+  padding-top: 64px;
+  padding-left: 73px;
+  margin: 0;
+  }
+
+  .photos__image-background {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-position: center;
+    height: 328px;
+  }
+
+  .photos__slogan {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 95px;
+    margin-left: 81px;
+    margin-right: 99px;
+    margin-bottom: 73px;
+  }
+
+  .photos__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 159px;
+    height: 100%;
+    margin-bottom: 17px;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .photos__image {
+    margin: 0;
+  }
+
+  .photos__image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photos__rating {
+    margin-right: auto;
+    padding-left: 8px;
+    margin-top: auto;
+    padding-bottom: 6px;
+    padding-top: 2px;
+  }
+
+  .photos__info-panorama {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photos__wrap-panorama {
+    order: 1;
+    padding-top: 8px;
+  }
+
+  .photos__rating-panorama {
+    order: 2;
+    margin-left: auto;
+    margin-right: 62px;
+    margin-top: 24px;
+  }
+
+  .photos__comment-panorama {
+    order: 3;
+    padding-left: 9px;
+    padding-right: 102px;
+  }
+
+  .photos__user-panorama {
+    padding-left: 8px;
+  }
+
+  .photos__info-wrap {
+    padding-left: 8px;
+    padding-top: 8px;
+  }
+
+  .photos__comment {
+    padding-left: 8px;
   }
 }
 
@@ -105,4 +246,73 @@
     flex-grow: 1;
   }
 
+  .photos__title {
+    padding-left: 393px;
+    padding-right: 391px;
+    padding-top: 55px;
+  }
+
+  .photos__image-background {
+    height: 285px;
+  }
+
+  .photos__slogan {
+    margin-top: 91px;
+    margin-left: 285px;
+    margin-right: 300px;
+    margin-bottom: 87px;
+  }
+
+  .photos_wrap {
+    padding: 0px 131px;
+  }
+
+  .photos__wrap-panorama {
+    padding-top: 6px;
+  }
+
+  .photos__rating-panorama {
+    margin-top: 18px;
+  }
+
+  .photos__comment-panorama {
+    padding-right: 0;
+  }
+
+  .photos__info-panorama {
+    padding-bottom: 13px;
+  }
+
+  .photos__image img {
+    width: 300px;
+    height: 400px;
+  }
+
+.photos__item:nth-child(even) {
+    padding-left: 6px;
+  }
+
+
+  .photos__item:nth-child(3) {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.photos__item:nth-child(4) {
+    padding-right: 12px;
+    padding-left: 0;
+}
+
+.photos__item:nth-child(5) {
+    padding-left: 6px;
+    padding-right: 0;
+}
+
+.photos__item:last-child {
+    padding-left: 13px;
+  }
+
+  .photos__info {
+    margin-bottom: 52px;
+  }
 }
