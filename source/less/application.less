@@ -50,6 +50,13 @@
   background-color: #283645;
   height: 396px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  @media
+  (min-resolution: @retina-dpi),
+  (min-resolution: @retina-dppx) {
+    background-image: url(../img/bg-back-mobile@2x.jpg);
+    background-size: cover;
+  }
 }
 
 
@@ -75,23 +82,43 @@
   display: none;
 }
 
+.application__pic {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   .application {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-image: url(../img/background-tablet.jpg);
+    background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center;
     height: 619px;
     margin-bottom: 51px;
+
+    @media
+  (min-resolution: @retina-dpi),
+  (min-resolution: @retina-dppx) {
+    background-image: url(../img/bg-back-tablet@2x.jpg);
+    background-size: cover;
+    }
   }
 
+  .application__pic {
+    display: block;
+  }
 
+  .application_pic-img {
+    position: relative;
+    margin-top: 73px;
+  }
 
   .application__list {
+    position: absolute;
     justify-content: flex-start;
     margin-left: 27px;
+    margin-top: 367px;
    }
 
  .application__item {
@@ -100,12 +127,14 @@
   }
 
 .application__info {
+  position: absolute;
   justify-content: flex-start;
   font-size: 18px;
   line-height: 24px;
   margin-right: 317px;
   margin-left: 22px;
   margin-top: 12px;
+  margin-top: 455px;
   }
 
   .application__image-background {
@@ -113,6 +142,7 @@
   }
 
   .application__slogan {
+    position: absolute;
     display: flex;
     margin-top: 92px;
     margin-left: 78px;
@@ -133,8 +163,8 @@
   }
 
   .application__btn {
-    margin-top: 0px;
-    margin-bottom: 32px;
+    position: absolute;
+    margin-top: 265px;
     width: 300px;
   }
 }
@@ -142,9 +172,22 @@
 
 @media (min-width: @desktop-width) {
   .application {
-    background-image: url(../img/background-desktop.jpg);
+    background-image: url(../img/bg-back-desktop@1x.jpg);
     height: 742px;
+
+    @media
+  (min-resolution: @retina-dpi),
+  (min-resolution: @retina-dppx) {
+    background-image: url(../img/bg-back-desktop@2x.jpg);
     }
+  }
+
+  .application_pic-img {
+    width: 1042px;
+    height: 645px;
+    margin-left: 151px;
+    margin-top: 99px;
+  }
 
     .application__title {
     margin-top: 20px;
@@ -155,27 +198,22 @@
   }
 
   .application__btn {
-    margin-top: 0px;
-    margin-bottom: 57px;
+    margin-top: 342px;
     margin-left: 131px;
   }
 
   .application__list {
-    margin-bottom: 35px;
+    margin-top: 467px;
     margin-left: 138px;
   }
 
   .application__slogan {
-   margin-bottom: 54px;
-   margin-left: 68px;
-  }
-
-  .advantage__iphone-img {
-    width: 200px;
-    margin-left: 62px;
+    margin-top: 86px;
+    margin-left: 68px;
   }
 
   .application__info {
+    margin-top: 576px;
     margin-left: 133px;
     margin-right: 704px;
   }
