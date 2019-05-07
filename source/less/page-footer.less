@@ -35,14 +35,14 @@
 }
 
 
-.page-footer__htmlacademy path:hover {
+.page-footer__htmlacademy:hover {
   fill: #283645;
-}
 
-
-.page-footer__htmlacademy path:active {
+  &:active {
   fill: #bec2c7;
+  }
 }
+
 
 .page-footer__social-btn {
   width: 46px;
@@ -59,6 +59,10 @@
 
 .page-footer__social-svg {
   margin-top: 12px;
+
+  &:active {
+    fill: #f1becc;
+  }
 }
 
 @media (min-width: @tablet-width) {
