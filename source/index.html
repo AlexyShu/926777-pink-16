@@ -124,13 +124,24 @@
             <div class="advantage_parts">
                   <div class="advantage__iphones">
                     <div class="advantage__iphone1">
-                       <img class="advantage__iphone-img" src="../img/iphone-screen-1-desktop@1x.png" srcset="../img/iphone-screen-1-desktop@2x.png" width="289" height="298">
+                      <picture>
+                        <source type="image/webp" srcset="../img/iphone-screen-1-desktop@1x.webp 1x, ../img/iphone-screen-1-desktop@2x.webp 2x">
+                        <img class="advantage__iphone-img" src="../img/iphone-screen-1-desktop@1x.png" srcset="../img/iphone-screen-1-desktop@2x.png" width="289" height="298">
+                       <picture>
                     </div>
                     <div class="advantage__iphone2">
-                       <img class="advantage__iphone-img" src="../img/iphone-screen-2-desktop@1x.png" srcset="../img/iphone-screen-2-desktop@2x.png" width="289" height="298">
+                      <picture>
+                        <source type="image/webp" srcset="../img/iphone-screen-2-desktop@1x.webp 1x, ../img/iphone-screen-2-desktop@2x.webp 2x">
+                        <img class="advantage__iphone-img" src="../img/iphone-screen-2-desktop@1x.png" srcset="../img/iphone-screen-2-desktop@2x.png" width="289" height="298">
+                      </picture>
                     </div>
                     <div class="advantage__iphone3">
                       <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="../img/iphone-screen-3-desktop@1x.webp 1x, ../img/iphone-screen-3-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="../img/iphone-screen-3-tablet@1x.webp 1x, ../img/iphone-screen-3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="../img/iphone-screen-mobile@1x.webp 1x, ../img/iphone-screen-mobile@2
+                        x.webp 2x">
+
                         <source media="(min-width: 1200px)" srcset="../img/iphone-screen-3-desktop@1x.png 1x, ../img/iphone-screen-3-desktop@2x.png 2x">
                         <source media="(min-width: 660px)" srcset="../img/iphone-screen-3-tablet@1x.png 1x, ../img/iphone-screen-3-tablet@2x.png 2x">
                         <img class="advantage__image" src="../img/iphone-screen-mobile@1x.png" srcsrt="../img/iphone-screen-mobile@2x.png" width="156" height="280">
@@ -338,7 +349,7 @@
         <div class="page-footer__wrapper">
         <footer class="page-footer">
           <div class="page-footer__logo">
-            <picture >
+            <picture>
                <source media="(min-width: 1200px)" srcset="../img/logo-pink-blue-desktop.svg">
                <img  src="../img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="75" height="22">
               </picture>
