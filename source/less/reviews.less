@@ -54,6 +54,12 @@
     background-color: #283645;
 }
 
+.reviews__icon-svg {
+  display: none;
+}
+
+
+
 
 @media (min-width: @tablet-width) {
   .reviews__user-data {
@@ -92,6 +98,10 @@
   display: block;
  }
 
+ .reviews__icon-svg {
+  display: block;
+}
+
   .reviews__text {
     margin-top: 41px;
     text-align: center;
@@ -112,6 +122,22 @@
 
   .reviews__slider {
     display: none;
+  }
+
+  .reviews__icon-right:hover,
+  .reviews__icon-left:hover {
+    fill: #7e868f;
+
+    &:active {
+      fill: #ffffff;
+    }
+  }
+
+    .reviews__text-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
