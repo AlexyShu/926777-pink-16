@@ -25,7 +25,7 @@
       </svg>
 
 
-       <header class="page-header">
+        <header class="page-header">
           <div class="page-header__wrapper">
              <a class="page-header__logo" href="index.html">
               <picture >
@@ -42,32 +42,135 @@
             <nav class="main-navigation">
               <ul class="main-navigation__list site-list">
                   <li class="main-navigation__item">
-                    <a class="main-navigation__link-active site-list__index" href="">Главная
+                    <a class="main-navigation__link site-list__index" href="index.html">Главная
                     </a>
                   </li>
                   <li class="main-navigation__item">
-                    <a class="main-navigation__link site-list__photos" href="photo-pink.html">Фотографии
+                    <a class="main-navigation__link  site-list__photos" href="photo-pink.html">Фотографии
                     </a>
                   </li>
                   <li class="main-navigation__item">
-                    <a class="main-navigation__link site-list__form" href="">Конкурс
+                    <a class="main-navigation__link-active site-list__form" href="form-pink.html">Конкурс
                     </a>
                   </li>
                   <li class="main-navigation__item">
-                    <a class="main-navigation__link site-list__academy" href="">HTML Academy
+                    <a class="main-navigation__link site-list__academy" href="https://up.htmlacademy.ru/adaptive/16">HTML Academy
                     </a>
                   </li>
                </ul>
             </nav>
         </header>
 
-      <div class="wrap">
 
-        <main class="page-main">
-          <! Тут по заданию просили не делать верстку>
+
+        <main>
+            <section class="contest">
+              <div class="contest__image-background">
+                 <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+              </div>
+          <div class="wrap">
+              <div class="contest__slogan">
+                <h2> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+                </h2>
+              </div>
+          </div>
+            </section>
+
+            <section class="form">
+              <div class="wrap">
+
+               <form>
+                  <div>
+                   <label class="form__text-style"> Фамилия:
+                      <input class="form__user-name" type="text" name="surname" value="Укажите фамилию *">
+                   </label>
+                  </div>
+                  <div>
+                     <label class="form__text-style"> Имя:
+                        <input class="form__user-name" type="text" name="name" value="Введите ваше имя *">
+                      </label>
+                  </div>
+                  <div>
+                    <label class="form__text-style"> Отчество:
+                      <input class="form__user-name" type="text" name="name" value="Ну и отчество тоже">
+                    </label>
+                  </div>
+
+                  <div>
+                     <fieldset class="form__title">
+                        <legend> Ваши безбашенные достижения в путешествии
+                          <label class="form__achievement">
+                             <input type="checkbox" name="achievement" checked>Сделал селфи с акулой
+                          </label>
+                          <label class="form__achievement">
+                             <input type="checkbox" name="achievement" checked>Обгорел на пляже
+                          </label>
+                          <label class="form__achievement">
+                             <input type="checkbox" name="achievement">Видел Чака Норриса
+                          </label>
+                          <label class="form__achievement">
+                             <input type="checkbox" name="achievement">Накупил сувениров
+                          </label>
+                          <label class="form__achievement">
+                             <input type="checkbox" name="achievement" checked>Удержал башню
+                          </label>
+                          <label class="form__achievement">
+                              <input type="checkbox" name="achievement">Разгромил отель
+                          </label>
+                        </legend>
+                      </fieldset>
+                  </div>
+
+                  <div>
+                  <fieldset>
+                    <legend> <span class="form__contact"> Констактная информация </span>
+                       <label class="form__text-style">Номер телефона
+                         <input class="form__user-contact" type="text" name="phone-number" value="Номер, пожалуйста">
+                       </label>
+                       <label class="form__text-style">Адрес почты
+                          <input class="form__user-contact" type="text" name="phone-number" value="Введите почту *">
+                       </label>
+                     </legend>
+                  </fieldset>
+                  </div>
+
+                  <div>
+                     <fieldset class="form__title">
+                        <legend> С каким приложением путешествовали?
+                          <label class="form__user-app">
+                             <input type="radio" name="app" checked>
+                             Pink для iOS
+                          </label>
+                          <label class="form__user-app">
+                             <input type="radio" name="app">
+                             Pink на Android
+                          </label>
+                          <label class="form__user-app">
+                             <input type="radio" name="app">
+                              Windows Phone
+                          </label>
+                        </legend>
+                     </fieldset>
+                  </div>
+
+                  <div>
+                    <fieldset>
+                       <legend class="form__text-style">
+                          Опишите свои эмоции
+                          <textarea class="form__user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+                       </legend>
+                    </fieldset>
+                  </div>
+
+                  <button class="submit">Отправить форму</button>
+                  <p>* — обязательные поля</p>
+               </form>
+             </div>
+            </section>
+
         </main>
-
-       <footer class="page-footer">
+      <div class="wrap">
+        <footer class="page-footer">
           <div class="page-footer__logo">
             <picture >
                <source media="(min-width: 1200px)" srcset="../img/logo-pink-blue-desktop.svg">
@@ -109,7 +212,7 @@
               </a>
             </div>
         </footer>
-
       </div>
+
     </body>
 </html>
