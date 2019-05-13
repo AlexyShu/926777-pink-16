@@ -70,7 +70,8 @@
               </div>
           <div class="wrap">
               <div class="contest__slogan">
-                <h2> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+                  <p class="contest__text1"> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </p>
+                  <p class="contest__text2"> Пожалуйста, заполните форму ниже:</p>
                 </h2>
               </div>
           </div>
@@ -80,82 +81,114 @@
               <div class="wrap">
 
                <form>
-                  <div>
-                   <label class="form__text-style"> Фамилия:
+                <div class="form__user-data">
+                    <label class="form__text-style">
+                      <p class="form__user-data-item"> Фамилия: </p>
                       <input class="form__user-name" type="text" name="surname" value="Укажите фамилию *">
-                   </label>
-                  </div>
-                  <div>
-                     <label class="form__text-style"> Имя:
-                        <input class="form__user-name" type="text" name="name" value="Введите ваше имя *">
-                      </label>
-                  </div>
-                  <div>
-                    <label class="form__text-style"> Отчество:
+                    </label>
+                    <label class="form__text-style">
+                      <p class="form__user-data-item"> Имя: </p>
+                      <input class="form__user-name" type="text" name="name" value="Введите ваше имя *">
+                    </label>
+                    <label class="form__text-style">
+                      <p class="form__user-data-item"> Отчество: </p>
                       <input class="form__user-name" type="text" name="name" value="Ну и отчество тоже">
                     </label>
-                  </div>
 
-                  <div>
+                </div>
+
+                  <div class="form__user-achievement">
                      <fieldset class="form__title">
-                        <legend> Ваши безбашенные достижения в путешествии
-                          <label class="form__achievement">
-                             <input type="checkbox" name="achievement" checked>Сделал селфи с акулой
-                          </label>
-                          <label class="form__achievement">
-                             <input type="checkbox" name="achievement" checked>Обгорел на пляже
-                          </label>
-                          <label class="form__achievement">
-                             <input type="checkbox" name="achievement">Видел Чака Норриса
-                          </label>
-                          <label class="form__achievement">
-                             <input type="checkbox" name="achievement">Накупил сувениров
-                          </label>
-                          <label class="form__achievement">
-                             <input type="checkbox" name="achievement" checked>Удержал башню
-                          </label>
-                          <label class="form__achievement">
-                              <input type="checkbox" name="achievement">Разгромил отель
-                          </label>
+                        <legend><div class="form__title"> Ваши безбашенные достижения в путешествии </div>
+                        <div class="form__achievement-wrap">
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement" checked>
+                               <span class="form__checkbox-text"> Сделал селфи с акулой </span>
+                            </label>
+                          </div>
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement" checked>
+                               <span class="form__checkbox-text">Обгорел на пляже </span>
+                            </label>
+                          </div>
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement">
+                               <span class="form__checkbox-text">Видел Чака Норриса </span>
+                            </label>
+                          </div>
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement">
+                               <span class="form__checkbox-text">Накупил сувениров </span>
+                            </label>
+                          </div>
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement" checked>
+                               <span class="form__checkbox-text">Удержал башню</span>
+                            </label>
+                          </div>
+                          <div class="form__achievement-item">
+                            <label class="form__checkbox-item">
+                               <input class="visually-hidden form__checkbox" type="checkbox" name="achievement">
+                              <span class="form__checkbox-text">Разгромил отель</span>
+                            </label>
+                          </div>
+                        </div>
                         </legend>
                       </fieldset>
                   </div>
 
-                  <div>
-                  <fieldset>
+                  <div class="form__contact-info">
+                   <fieldset class="form__contact-table">
                     <legend> <span class="form__contact"> Констактная информация </span>
+                      <div>
                        <label class="form__text-style">Номер телефона
                          <input class="form__user-contact" type="text" name="phone-number" value="Номер, пожалуйста">
                        </label>
+                      </div>
+                      <div>
                        <label class="form__text-style">Адрес почты
                           <input class="form__user-contact" type="text" name="phone-number" value="Введите почту *">
                        </label>
+                      </div>
                      </legend>
-                  </fieldset>
+                   </fieldset>
                   </div>
 
-                  <div>
+                  <div class="form__app">
                      <fieldset class="form__title">
                         <legend> С каким приложением путешествовали?
-                          <label class="form__user-app">
-                             <input type="radio" name="app" checked>
-                             Pink для iOS
-                          </label>
-                          <label class="form__user-app">
-                             <input type="radio" name="app">
-                             Pink на Android
-                          </label>
-                          <label class="form__user-app">
-                             <input type="radio" name="app">
-                              Windows Phone
-                          </label>
+
+                          <div class="form__app-item">
+                           <label class="form__user-app">
+                             <input class="visually-hidden form__radio" type="radio" name="app" checked>
+                             <span class=form__radio-text>Pink для iOS </span>
+                           </label>
+                          </div>
+
+                          <div class="form__app-item">
+                           <label class="form__user-app">
+                             <input class="visually-hidden form__radio" type="radio" name="app">
+                             <span class=form__radio-text> Pink на Android </span>
+                           </label>
+                          </div>
+                          <div class="form__app-item">
+                           <label class="form__user-app">
+                             <input class="visually-hidden form__radio" type="radio" name="app">
+                              <span class=form__radio-text> Windows Phone </span>
+                           </label>
+                          </div>
                         </legend>
                      </fieldset>
                   </div>
 
-                  <div>
-                    <fieldset>
-                       <legend class="form__text-style">
+                  <div class="form__comment">
+                    <fieldset class="form__comment-table">
+                       <legend class="form__comment-style">
                           Опишите свои эмоции
                           <textarea class="form__user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
                        </legend>
