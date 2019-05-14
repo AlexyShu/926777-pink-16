@@ -82,23 +82,23 @@
 
                <form>
                 <div class="form__user-data">
-                    <label class="form__text-style">
-                      <p class="form__user-data-item"> Фамилия: </p>
+                    <label class="form__data-style">
+                      <p class="form__user-item"> Фамилия: </p>
                       <input class="form__user-name" type="text" name="surname" value="Укажите фамилию *">
                     </label>
-                    <label class="form__text-style">
-                      <p class="form__user-data-item"> Имя: </p>
+                    <label class="form__data-style">
+                      <p class="form__user-item"> Имя: </p>
                       <input class="form__user-name" type="text" name="name" value="Введите ваше имя *">
                     </label>
-                    <label class="form__text-style">
-                      <p class="form__user-data-item"> Отчество: </p>
+                    <label class="form__data-style">
+                      <p class="form__user-item"> Отчество: </p>
                       <input class="form__user-name" type="text" name="name" value="Ну и отчество тоже">
                     </label>
 
                 </div>
 
                   <div class="form__user-achievement">
-                     <fieldset class="form__title">
+                     <fieldset class="form__border">
                         <legend><div class="form__title"> Ваши безбашенные достижения в путешествии </div>
                         <div class="form__achievement-wrap">
                           <div class="form__achievement-item">
@@ -144,14 +144,14 @@
 
                   <div class="form__contact-info">
                    <fieldset class="form__contact-table">
-                    <legend> <span class="form__contact"> Констактная информация </span>
+                    <legend class="form__border"> <span class="form__contact"> Констактная информация </span>
                       <div>
-                       <label class="form__text-style">Номер телефона
+                       <label class="form__contact-item">Номер телефона
                          <input class="form__user-contact" type="text" name="phone-number" value="Номер, пожалуйста">
                        </label>
                       </div>
                       <div>
-                       <label class="form__text-style">Адрес почты
+                       <label class="form__contact-item">Адрес почты
                           <input class="form__user-contact" type="text" name="phone-number" value="Введите почту *">
                        </label>
                       </div>
@@ -160,8 +160,9 @@
                   </div>
 
                   <div class="form__app">
-                     <fieldset class="form__title">
-                        <legend> С каким приложением путешествовали?
+                     <fieldset class="form__border">
+                        <legend>
+                          <div class="form__app-title">С каким приложением путешествовали?</div>
 
                           <div class="form__app-item">
                            <label class="form__user-app">
@@ -188,15 +189,15 @@
 
                   <div class="form__comment">
                     <fieldset class="form__comment-table">
-                       <legend class="form__comment-style">
-                          Опишите свои эмоции
+                       <legend>
+                         <div class="form__comment-title"> Опишите свои эмоции </div>
                           <textarea class="form__user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
                        </legend>
                     </fieldset>
                   </div>
 
-                  <button class="submit">Отправить форму</button>
-                  <p>* — обязательные поля</p>
+                  <button class="form_btn" type=submit">Отправить форму</button>
+                  <p class="form__marker-text"><span class="form__marker">*</span> — обязательные поля</p>
                </form>
              </div>
             </section>
@@ -207,7 +208,7 @@
           <div class="page-footer__logo">
             <picture >
                <source media="(min-width: 1200px)" srcset="../img/logo-pink-blue-desktop.svg">
-               <img  src="../img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="75" height="22">
+               <img  src="../img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="146" height="40">
               </picture>
           </div>
             <ul class="page-footer__social">

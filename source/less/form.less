@@ -1,21 +1,38 @@
-.form__text-style {
+.form__data-style,
+.form__contact-item {
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
-  margin-left: 30px;
 }
 
-.form__title {
+.form__data-style {
+  margin-left: 21px;
+}
+
+.form__user-data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+}
+
+
+.form__title,
+.form__app-title {
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
-  max-width: 240px;
   border: none;
+  max-width: 243px;
+  margin-left: 35px;
+}
+
+.form__app-title {
+  margin-bottom: 39px;
 }
 
 .form__achievement-item,
@@ -34,25 +51,15 @@
   width: 280px;
   border: solid 2px #e5e5e5;
   margin-bottom: 2px;
-  margin-left: 20px;
+  margin-left: 0;
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 15px;
 }
 
 
-.form__contact {
-  display: none;
-}
-
-.form__user-data {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 39px;
-}
-
-.form__user-data-item {
-  margin-left: 43px;
+.form__user-item {
+  margin-left: 23px;
   margin-bottom: 5px;
 }
 
@@ -64,14 +71,23 @@
 .form__achievement-item {
   display: flex;
   text-transform: none;
-  margin-bottom: 50px;
+  padding-bottom: 46px;
+  margin-left: 17px;
 }
+
 
 .form__achievement-wrap {
   margin-top: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
+.form__contact {
+  display: none;
+}
+
+.form__contact-item {
+  margin-left: 31px;
+}
 
 .form__contact-info {
   margin-top: 28px;
@@ -96,17 +112,19 @@
 .form__app {
   background-color: #f2f2f2;
   padding-top: 38px;
-  padding-bottom: 14px;
+  padding-bottom: 0;
   margin-top: 12px;
 }
 
 .form__app-item {
   text-transform: none;
-  margin-top: 40px;
+  margin-left: 19px;
+  padding-bottom: 46px;
 }
 
 .form__comment {
-  margin-top: 60px;
+  margin-top: 33px;
+  margin-bottom: 27px;
 }
 
 .form__comment-table {
@@ -117,26 +135,27 @@
    width: 279px;
    border: solid 2px #e5e5e5;
    margin-top: 10px;
+   margin-left: 9px;
    padding-top: 14px;
    padding-bottom: 123px;
    padding-left: 18px;
 }
 
-.form__comment-style {
+.form__comment-title {
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
-  margin-left: 8px;
+  margin-left: 57px;
 }
 
 .form__checkbox-item {
   position: relative;
-  padding: 3px 0 3px 43px;
+  padding: 3px 0 3px 75px;
 }
 
-.form__checkbox + span.form__checkbox-text::before {
+.form__checkbox + .form__checkbox-text::before {
   display: block;
   content: "";
   background: #ffffff;
@@ -149,7 +168,7 @@
 }
 
 
-.form__checkbox:checked + span.form__checkbox-text::before {
+.form__checkbox:checked + .form__checkbox-text::before {
   display: block;
   content: "";
   background: #ffffff url(../img/icon-checkbox-yes.svg) 50% 50% no-repeat;
@@ -164,11 +183,11 @@
 
 .form__user-app {
   position: relative;
-  padding: 3px 0 3px 43px;
+  padding: 3px 0 3px 69px;
 }
 
 
-.form__radio + span.form__radio-text::before {
+.form__radio + .form__radio-text::before {
   display: block;
   content: "";
   background: #ffffff;
@@ -181,7 +200,7 @@
   top: 0;;
 }
 
-.form__radio:checked + span.form__radio-text::before {
+.form__radio:checked + .form__radio-text::before {
   display: block;
   content: "";
   background: #ffffff url(../img/icon-map-marker.svg) 50% 50% no-repeat;
@@ -195,3 +214,34 @@
 }
 
 
+.form__border {
+  border: none;
+  padding:  0;
+}
+
+.form_btn {
+  width: 279px;
+  height: 62px;
+  margin-left: 21px;
+  border: solid 2px #2aab6d;
+  background-color: #2aab6d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.form__marker-text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  margin-left: 68px;
+}
+
+.form__marker {
+  color: #d22856;
+}
