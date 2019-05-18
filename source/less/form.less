@@ -81,9 +81,6 @@
   margin-bottom: 0;
 }
 
-.form__contact {
-  display: none;
-}
 
 .form__contact-item {
   margin-left: 31px;
@@ -214,7 +211,9 @@
 }
 
 
-.form__border {
+.form__border,
+.form__border-app,
+.form__border-contact {
   border: none;
   padding:  0;
 }
@@ -272,6 +271,7 @@
   .form__user-data {
     margin-right: 20px;
     order: 1;
+    margin-bottom: 0;
   }
 
   .form__conteiner {
@@ -285,11 +285,17 @@
 
   .form__contact-info {
     order: 3;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 
   .form__app {
     order: 2;
     background: #ffffff;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .form__comment {
@@ -304,7 +310,8 @@
     order: 7;
   }
 
-  .form__border {
+  .form__border,
+  .form__border-app {
     border: solid 2px #e5e5e5;
   }
 
@@ -312,14 +319,58 @@
    border: solid 2px #e5e5e5;
   }
 
-  .form__contact {
+  .form__border-contact {
     display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #d22856;
+    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 28px;
   }
 
   .form__contact-icon {
     display: block;
     border: none;
     background-color: #e5e5e5;
+    width: 60px;
   }
+
+  .form__contact-wrap {
+    display: flex;
+    padding: 0;
+  }
+
+  .form__user-contact {
+    margin: 0;
+  }
+
+  .form__app-title {
+    max-width: 368px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 46px;
+  }
+
+  .form__border-app {
+    padding-left: 39px;
+    padding-right: 208px;
+    padding-bottom: 14px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+  }
+
+  .form__user-app {
+    padding-left: 60px;
+  }
+
+  .form__contact-item {
+    max-width: 496px;
+  }
+
 
 }

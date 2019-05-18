@@ -8,14 +8,13 @@
   align-content: center;
   flex-direction: column;
   margin-top: 17px;
-  margin-left: 56px;
-  margin-right: 60px;
   margin-bottom: 0px;
   background-color: #ffffff;
   color: #283645;
   font-size: 24px;
   line-height: normal;
   text-align: center;
+  position: relative;
 }
 
 .advantage__title {
@@ -73,12 +72,24 @@
 
 .advantage__slogan-item1 {
   margin-bottom: 13px;
+  margin-left: 56px;
+  margin-right: 60px;
 }
 
 .advantage__slogan-item2 {
   margin-top: 7px;
+  margin-left: 56px;
+  margin-right: 60px;
 }
 
+.advantage__slogan-item2::after {
+  content: url(../img/bg-triangle-white.svg);
+  position: absolute;
+  height: 70px;
+  width: 74px;
+  top: 178px;
+  left: 0;
+}
 
 @media (min-width: @tablet-width) {
   .advantage_parts {
