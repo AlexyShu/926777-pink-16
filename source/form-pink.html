@@ -99,9 +99,9 @@
                 </div>
 
                   <div class="form__user-achievement">
-                     <fieldset class="form__border">
-                        <legend>
-                          <div class="form__title"> Ваши безбашенные достижения в путешествии </div>
+                     <fieldset class="form__border-achievement">
+                        <legend class="form__achievement-title">
+                          Ваши безбашенные достижения в путешествии
                         </legend>
                         <div class="form__achievement-wrap">
                           <div class="form__achievement-item">
@@ -150,7 +150,7 @@
                        Констактная информация
                     </legend>
                       <div class="form__contact-wrap">
-                       <label class="form__contact-item">Номер телефона
+                       <label class="form__contact-item"><span class="form__contact-wrapper">Номер телефона </span>
                          <input class="form__user-contact" type="text" name="phone-number" value="Номер, пожалуйста">
                        </label>
                        <button class="form__contact-icon">
@@ -160,7 +160,7 @@
                        </button>
                       </div>
                       <div class="form__contact-wrap">
-                       <label class="form__contact-item">Адрес почты
+                       <label class="form__contact-item"><span class="form__contact-wrapper">Адрес почты</span>
                           <input class="form__user-contact" type="text" name="phone-number" value="Введите почту *">
                        </label>
                        <button class="form__contact-icon">
@@ -210,16 +210,17 @@
                   </div>
 
                   <div class="form__comment">
-                    <fieldset class="form__comment-table">
-                       <legend>
-                         <div class="form__comment-title"> Опишите свои эмоции </div>
+                    <fieldset class="form__border-comment">
+                       <legend class="form__comment-title">
+                         Опишите свои эмоции
+                        </legend>
                           <textarea class="form__user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
-                       </legend>
                     </fieldset>
                   </div>
-
-                  <button class="form_btn" type=submit">Отправить форму</button>
-                  <p class="form__marker-text"><span class="form__marker">*</span> — обязательные поля</p>
+                  <div class="form__btn-block">
+                   <button class="form__btn" type=submit">Отправить форму</button>
+                   <p class="form__marker-text"><span class="form__marker">*</span> — обязательные поля</p>
+                  </div>
                </form>
              </div>
             </section>

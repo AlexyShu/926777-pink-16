@@ -18,7 +18,7 @@
 }
 
 
-.form__title,
+.form__achievement-title,
 .form__app-title {
   font-size: 14px;
   font-weight: normal;
@@ -124,10 +124,6 @@
   margin-bottom: 27px;
 }
 
-.form__comment-table {
-  border: none;
-}
-
 .form__user-comment {
    width: 279px;
    border: solid 2px #e5e5e5;
@@ -211,14 +207,15 @@
 }
 
 
-.form__border,
+.form__border-achievement,
 .form__border-app,
-.form__border-contact {
+.form__border-contact,
+.form__border-comment {
   border: none;
   padding:  0;
 }
 
-.form_btn {
+.form__btn {
   width: 279px;
   height: 62px;
   margin-left: 21px;
@@ -281,6 +278,8 @@
 
   .form__user-achievement {
     order: 4;
+    background-color: #ffffff;
+    margin-top: 20px;
   }
 
   .form__contact-info {
@@ -300,23 +299,26 @@
 
   .form__comment {
       order: 5;
+      margin-right: 18px;
+      margin-left: 18px;
+      margin-bottom: 67px;
   }
 
-  .form_btn {
+  .form__btn-block {
     order: 6;
+    display: flex;
+    margin-bottom: 31px;
   }
 
-  .form__marker-text {
-    order: 7;
-  }
-
-  .form__border,
-  .form__border-app {
+  .form__border-achievement,
+  .form__border-app,
+  .form__border-comment {
     border: solid 2px #e5e5e5;
   }
 
   .form__contact-table {
    border: solid 2px #e5e5e5;
+   padding-bottom: 0;
   }
 
   .form__border-contact {
@@ -337,15 +339,25 @@
     border: none;
     background-color: #e5e5e5;
     width: 60px;
+    padding: 0;
+    margin-bottom: 65px;
   }
 
   .form__contact-wrap {
     display: flex;
     padding: 0;
+    position:relative;
+  }
+
+  .form__contact-wrapper {
+    position: absolute;
+    top: 72px;
+    left: 69px;
   }
 
   .form__user-contact {
     margin: 0;
+    min-width: 440px;
   }
 
   .form__app-title {
@@ -369,8 +381,55 @@
   }
 
   .form__contact-item {
-    max-width: 496px;
+    margin-bottom: 65px;
+    margin-left: 48px;
+    min-width: 439px;
   }
 
+  .form__achievement-title {
+    max-width: 436px;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 33px;
+    margin-bottom: 4px;
+  }
+
+  .form__border-achievement {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 19px;
+    padding-bottom: 5px;
+  }
+
+  .form__achievement-item {
+    margin-left: 57px;
+  }
+
+  .form__checkbox-item {
+    padding-left: 63px;
+  }
+
+  .form__comment-title {
+    text-align: center;
+    padding-right: 38px;
+    padding-left: 38px;
+    margin-bottom: 20px;
+  }
+
+  .form__user-comment {
+    margin-left: 58px;
+    width: 500px;
+    padding-bottom: 115px;
+    margin-bottom: 45px;
+  }
+
+  .form__btn {
+    width: 300px;
+    margin-right: 70px;
+  }
+
+  .form__marker-text {
+    padding-top: 3px;
+  }
 
 }
