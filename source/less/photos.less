@@ -117,7 +117,31 @@
   display: block;
 }
 
+.photos__panorama-blok {
+  position: relative;
+}
 
+.photos__marker {
+    position: absolute;
+    top: 0;
+    left: 159px;
+    color: #ffffff;
+    background-color: #d22856;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.photos__rating,
+.photos__rating-panorama {
+  display: flex;
+  flex-direction: flex-start;
+}
 
 @media (min-width: @tablet-width) {
   .photos_wrap {
