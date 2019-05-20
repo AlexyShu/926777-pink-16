@@ -121,7 +121,7 @@
 
 .form__comment {
   margin-top: 33px;
-  margin-bottom: 27px;
+  margin-bottom: 41px;
 }
 
 .form__user-comment {
@@ -209,10 +209,17 @@
 
 .form__border-achievement,
 .form__border-app,
-.form__border-contact,
 .form__border-comment {
   border: none;
   padding:  0;
+}
+
+.form__border-contact {
+  display: none;
+}
+
+.form__border-comment {
+  margin-left: 11px;
 }
 
 .form__btn {
@@ -243,6 +250,10 @@
 }
 
 .form__contact-icon {
+  display: none;
+}
+
+.form__marker-text-hidden {
   display: none;
 }
 
@@ -430,6 +441,132 @@
 
   .form__marker-text {
     padding-top: 3px;
+  }
+
+  .form__border-comment {
+    margin-left: 1px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .form__user-data {
+    margin-left: 111px;
+    margin-right: 633px;
+    padding-top: 28px;
+  }
+
+  .form__conteiner {
+    position: relative;
+  }
+
+  .form__app {
+    position: absolute;
+    top: 9px;
+    left: 601px;
+    width: 506px;
+  }
+
+  .form__app-item {
+    margin-left: 76px;
+  }
+
+  .form__border-app {
+    width: 436px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__app-title {
+    max-width: 379px;
+    margin-bottom: 46px;
+  }
+
+  .form__contact-info {
+    margin-top: 2px;
+    margin-left: 130px;
+  }
+
+  .form__contact-table {
+    width: 936px;
+  }
+
+  .form__user-contact {
+    min-width: 314px;
+  }
+
+  .form__contact-item {
+     min-width: 313px;
+     margin-bottom: 53px;
+  }
+
+  .form__contact-icon {
+    margin-bottom: 53px;
+  }
+
+  .form__contact-block {
+    display: flex;
+  }
+
+  .form__contact-wrap:nth-child(1) {
+    margin-right: 21px;
+  }
+
+  .form__border-contact {
+    margin-bottom: 23px;
+  }
+
+  .form__user-achievement {
+    width: 1070px;
+  }
+
+  .form__border-achievement {
+    margin-left: 130px;
+    margin-right: 0;
+  }
+
+  .form__achievement-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 6px;
+  }
+
+  .form__comment {
+    width: 1053px;
+  }
+
+  .form__border-comment{
+    margin-left: 113px;
+    margin-right: 0;
+  }
+
+  .form__comment-title {
+    margin-bottom: 17px;
+  }
+
+  .form__user-comment {
+    width: 820px;
+    padding-bottom: 50px;
+    margin-bottom: 36px;
+  }
+
+  .form__btn-block {
+    margin-left: 110px;
+    margin-bottom: 11px;
+  }
+
+  .form__marker-text {
+    display: none;
+  }
+
+  .form__marker-text-hidden {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #283645;
+    text-transform: uppercase;
+    margin-left: 256px;
   }
 
 }
