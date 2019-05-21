@@ -14,7 +14,7 @@
   margin-top: 45px;
   margin-left: 47px;
   margin-right: 47px;
-  margin-bottom: 21px;
+  margin-bottom: 39px;
 }
 
 
@@ -48,12 +48,16 @@
   justify-content: center;
   text-align: center;
   margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 
 .info-map {
   background-image: url(../img/bg-map-mobile@1x.png);
   background-color: #ffffff;
+  min-height: 199px;
+  position: relative;
 
   @media
   (min-resolution: @retina-dpi),
@@ -65,14 +69,22 @@
 
 .info__item-address {
   position: relative;
+  padding-bottom: 20px;
 }
 
-.info__decor::after {
-    content: url(../img/bg-triangle-white-footer.svg);
-    position: absolute;
-    top: 178px;
-    left: -40px;
+.info__triangle {
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
+
+.info__map-marker {
+  position: absolute;
+  top: 95px;
+  left: 142px;
+}
+
+
 
 
 @media (min-width: @tablet-width) {
