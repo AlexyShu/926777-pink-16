@@ -31,24 +31,25 @@
       </svg>
 
 
-         <header >
-          <div class="page-header">
-           <div class="page-header__wrapper">
-             <a class="page-header__logo" href="index.html">
-              <picture >
-               <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
-               <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
-               <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
-              </picture>
-             </a>
-            <div class="page-header__btn">
+         <header class="page-header--background">
+          <div class="wrap">
+           <div class="page-header">
+              <div class="page-header__wrapper">
+               <a class="page-header__logo" href="index.html">
+                <picture >
+                  <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+                  <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
+                </picture>
+               </a>
+               <div class="page-header__btn">
                   <button class="page-header__taggle-on" type="button">
                   </button>
                   <button class="page-header__taggle-off" type="button">
                   </button>
-             </div>
-           </div>
-            <nav class="main-navigation">
+               </div>
+              </div>
+             <nav class="main-navigation">
               <ul class="main-navigation__list site-list">
                   <li class="main-navigation__item">
                     <a class="main-navigation__link-active site-list__index" href="index.html">Главная
@@ -67,15 +68,10 @@
                     </a>
                   </li>
                </ul>
-            </nav>
-          </div>
-            <div class="contest__image-background">
-                 <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-            </div>
-        </header>
-
-        <main class="page-main">
-          <section class="application">
+             </nav>
+           </div>
+           </div>
+           <div class="application">
             <div class="application__image-background">
                 <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png" alt="iphone-desctop" width="260" height="285">
             </div>
@@ -117,8 +113,10 @@
               </li>
             </ul>
             <p class="application__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </section>
+          </div>
+        </header>
 
+        <main class="page-main">
 
           <section class="advantage">
             <div class="wrap">
@@ -222,9 +220,9 @@
                  <input class="reviews__input" type="radio" name="slider">
                  <input class="reviews__input" type="radio" name="slider">
                    <div class="reviews__slider-wrapper">
-                   <label></label>
-                   <label></label>
-                   <label></label>
+                   <label class="reviews__slider-active"></label>
+                   <label class="reviews__slider-inactive"></label>
+                   <label class="reviews__slider-inactive"></label>
                  </div>
               </div>
 
