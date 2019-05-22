@@ -55,6 +55,14 @@
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 15px;
+
+  &:hover {
+    border: solid 2px #000000;
+  }
+
+  &:active {
+    border: solid 2px #d22856;
+  }
 }
 
 
@@ -103,6 +111,14 @@
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 15px;
+
+    &:hover {
+    border: solid 2px #000000;
+  }
+
+  &:active {
+    border: solid 2px #d22856;
+  }
 }
 
 
@@ -160,6 +176,30 @@
   top: 0;;
 }
 
+.form__checkbox:hover + .form__checkbox-text::before {
+  display: block;
+  content: "";
+  background: #ffffff;
+  border: solid 2px #000000;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
+.form__checkbox:active + .form__checkbox-text::before {
+  display: block;
+  content: "";
+  background: #ffffff;
+  border: solid 2px #d22856;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
 
 .form__checkbox:checked + .form__checkbox-text::before {
   display: block;
@@ -172,6 +212,31 @@
   left: 0;
   top: 0;;
 }
+
+.form__checkbox:hover:checked + .form__checkbox-text::before {
+  display: block;
+  content: "";
+  background: #ffffff url(../img/icon-checkbox-yes.svg) 50% 50% no-repeat;
+  border: solid 2px #000000;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
+.form__checkbox:active:checked + .form__checkbox-text::before {
+  display: block;
+  content: "";
+  background: #ffffff url(../img/icon-checkbox-yes.svg) 50% 50% no-repeat;
+  border: solid 2px #d22856;
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
 
 
 .form__user-app {
@@ -193,6 +258,33 @@
   top: 0;;
 }
 
+.form__radio:hover + .form__radio-text::before {
+  display: block;
+  content: "";
+  background: #ffffff;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
+.form__radio:active + .form__radio-text::before {
+  display: block;
+  content: "";
+  background: #ffffff;
+  border: solid 2px #d22856;
+  border-radius: 50%;
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
+
 .form__radio:checked + .form__radio-text::before {
   display: block;
   content: "";
@@ -205,6 +297,33 @@
   left: 0;
   top: 0;;
 }
+
+.form__radio:hover:checked + .form__radio-text::before {
+  display: block;
+  content: "";
+  background: #ffffff url(../img/icon-map-marker.svg) 50% 50% no-repeat;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
+.form__radio:active:checked + .form__radio-text::before {
+  display: block;
+  content: "";
+  background: #ffffff url(../img/icon-map-marker.svg) 50% 50% no-repeat;
+  border: solid 2px #d22856;
+  border-radius: 50%;
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;;
+}
+
 
 
 .form__border-achievement,
@@ -234,6 +353,23 @@
   line-height: 30px;
   text-align: center;
   margin-bottom: 22px;
+
+   &:hover {
+  border: solid 2px #1c9b5e;
+  background-color: #1c9b5e;
+  }
+
+  &:active {
+    border: solid 2px #1c9b5e;
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.form__btn--disabled {
+  border: solid 2px rgb(229, 229, 229);
+  background-color: rgb(229, 229, 229);
+  color: #ffffff;
 }
 
 .form__marker-text {
@@ -243,6 +379,7 @@
   color: #283645;
   text-transform: uppercase;
   margin-left: 68px;
+  margin-bottom: 57px;
 }
 
 .form__marker {

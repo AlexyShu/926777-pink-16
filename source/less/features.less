@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
   padding-bottom: 34px;
   position: relative;
+  background: none;
 }
 
 
@@ -67,6 +68,7 @@
   width: 300%;
   margin-bottom: 43px;
   padding-top: 36px;
+  background-color: #f2f2f2;
 }
 
 
@@ -100,6 +102,14 @@
     margin-right: 13px;
     opacity: 0.3;
     background-color: #283645;
+
+    &:hover {
+      background-color: #7e868f;
+    }
+
+    &:active {
+      background-color: #e9ebec;
+    }
 }
 
 .features__slider-active {
@@ -112,6 +122,18 @@
     background: #ffffff;
     border: 2px solid #283645;
     margin-top: -3px;
+
+    &:hover {
+    width: 6px;
+    height: 6px;
+    opacity: 0.3;
+    background-color: #7e868f;
+  }
+
+    &:active {
+      background-color: #e9ebec;
+    }
+
 }
 
 .features__hit {
@@ -133,11 +155,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .features {
+    padding-bottom: 299px;
+  }
+
   .features__table {
-    position: relative;
-    width: 620px;
-    margin-left: 18px;
-    padding-bottom: 0px;
+    top: -27px;
+    left: 18px;
+    width: 624px;
     text-align: center;
   }
 
@@ -149,14 +174,18 @@
 
   .features__box {
   height: 43px;
+  width: 154px;
+  padding-top: 6px;
 }
 
   .features__title {
-    margin-top: 10px;
+    padding-top: 0;
+    margin-top: 5px;
   }
 
   .features__price {
     padding-bottom: 6px;
+    font-size: 16px;
   }
 
   .features__slider {
@@ -167,24 +196,38 @@
     font-size: 14px;
     line-height: 30px;
     padding: 0;
+    padding-left: 16px;
   }
 
   .features__icon-headen {
-     margin-top: 9px;
+     margin-top: 0;
   }
 
   .features__line {
     display: none;
   }
+
+  .features_svg-pink,
+  .features_svg-smile,
+  .features_svg-comment {
+  margin-left: 58px;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
+  .features {
+    background: url(../img/bg-triangle-white.svg) no-repeat;
+    background-color: #f2f2f2;
+    padding-bottom: 530px;
+    margin-bottom: 59px;
+  }
+
   .features__table {
-  width: 940px;
-  margin-left: 130px;
-  padding-bottom: 15px;
-  margin-bottom: 108px;
+    width: 940px;
+    top: 119px;
+    left: 128px;
+
   }
 
   .features__promo {
@@ -201,5 +244,21 @@
 
   .features__icon-headen {
      margin-top: 18px;
+  }
+
+  .features__box {
+    width: 231px;
+    height: 55px;
+    padding-top: 0;
+  }
+
+  .features__price {
+    padding-bottom: 0;
+    font-size: 24px;
+  }
+
+  .features__title {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
