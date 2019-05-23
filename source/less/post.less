@@ -25,6 +25,14 @@
   margin-left: 18px;
   margin-right: 20px;
   margin-bottom: 12px;
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+  &:active {
+    color: #dd5c7f;
+    background-color: #d22856;
+  }
 }
 
 
@@ -33,11 +41,20 @@
   font-size: 18px;
   line-height: 18px;
   border: solid 3px rgba(40, 54, 69, 0.1);
+  background: transparent;
   border-radius: 27px;
   width: 280px;
   height: 55px;
   margin-left: 18px;
   margin-right: 20px;
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: solid 3px rgba(40, 54, 69, 0.3);
+  }
+  &:active {
+    border: solid 3px rgba(40, 54, 69, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 
@@ -112,6 +129,10 @@
     background: #ffffff;
     border: 2px solid #d22856;
     border-radius: 50%;
+    &:active {
+      background: #d22856;
+      border: 2px solid #d22856;
+    }
 }
 
 .post__range-tablet {
@@ -122,16 +143,14 @@
 .post__svg-diagram,
 .post__svg-fill {
   fill: #b5b9be;
-  &:active {
-  fill: #d22856;
-  &:hover {
-  fill: #8d949b;
-   }
-  }
 }
 
-.post__svg-crop:active {
-  fill: #d22856;
+.post__svg-crop,
+.post__svg-diagram,
+.post__svg-fill {
+  &:active {
+    fill: #d22856;
+  };
   &:hover {
    fill: #8d949b;
    }
@@ -232,6 +251,10 @@
     background: #ffffff;
     border: 2px solid #d22856;
     border-radius: 50%;
+    &:active {
+      background: #d22856;
+      border: 2px solid #d22856;
+    }
   }
 
 .post__toggle1 {

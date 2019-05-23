@@ -5,6 +5,7 @@
 }
 
 
+
 .page-header__wrapper {
   display: flex;
   height: 69px;
@@ -50,10 +51,11 @@
 
 .page-header__taggle-off {
   display: block;
-  width: 24px;
-  height: 24px;
-  background:  url(../img/icon-no-white.svg) 50% 50% no-repeat;
+  width: 34px;
+  height: 18px;
+  fill: #ffffff;
   border: none;
+  background-color: transparent;
 
   &:hover {
     fill: #d22856;
@@ -71,7 +73,20 @@
 .page-header__logo {
     margin-top: 23px;
     margin-left: 19px;
+    fill: #ffffff;
+    &:hover {
+     fill: #d22856;
+    }
+    &:active {
+    fill: #65707b;
+   }
 }
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}
+
 
 
 
@@ -85,10 +100,16 @@
     margin-top: 46px;
   }
 
-  .page-header__logo-image {
+  .page-header__logo-tablet {
+    display: block;
     width: 147px;
     height: 40px;
     margin-top: 4px;
+  }
+
+  .page-header__logo-mobile,
+  .page-header__logo-desktop {
+    display: none;
   }
 }
 
@@ -128,6 +149,15 @@
   .page-header__logo {
     padding-left: 110px;
     width: 280px;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
+   }
+
+
+  .page-header__logo-desktop {
+    display: block;
   }
 }
 
