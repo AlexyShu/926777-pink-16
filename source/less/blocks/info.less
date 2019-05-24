@@ -14,7 +14,7 @@
   margin-top: 45px;
   margin-left: 47px;
   margin-right: 47px;
-  margin-bottom: 21px;
+  margin-bottom: 39px;
 }
 
 
@@ -48,12 +48,16 @@
   justify-content: center;
   text-align: center;
   margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 
 .info-map {
   background-image: url(../img/bg-map-mobile@1x.png);
   background-color: #ffffff;
+  min-height: 199px;
+  position: relative;
 
   @media
   (min-resolution: @retina-dpi),
@@ -63,17 +67,41 @@
   }
 }
 
+.info__item-address {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.info__triangle {
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.info__map-marker {
+  position: absolute;
+  top: 95px;
+  left: 142px;
+}
+
+
+
 
 @media (min-width: @tablet-width) {
+  .info {
+    padding-top: 0;
+  }
+
   .info__list {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 43px;
   }
 
  .info-map {
   background-image: url(../img/bg-map-tablet@1x.jpg);
-  height: 365px;
+  height: 369px;
 
   @media
   (min-resolution: @retina-dpi),
@@ -92,7 +120,7 @@
   letter-spacing: normal;
   text-align: center;
   margin-top: 42px;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
  }
 
  .info__item-phone {
@@ -108,13 +136,25 @@
     margin-right: 47px;
     margin-left: 4px;
  }
+
+ .info__triangle {
+    top: -23px;
+    left: -2px;
+    height: 103px;
+    width: 660px;
+ }
+
+ .info__map-marker {
+    top: 187px;
+    left: 312px;
+  }
 }
 
 
 @media (min-width: @desktop-width) {
   .info-map {
   background-image: url(../img/bg-map-desktop@1x.jpg);
-  height: 501px;
+  height: 531px;
   margin-bottom: 30px;
 
     @media
@@ -142,7 +182,7 @@
 
  .info__list {
   justify-content: space-around;
-  margin-bottom: 7px;
+  margin-bottom: 0;
   margin-top: 46px;
   padding-left: 57px;
   padding-right: 22px;
@@ -156,11 +196,15 @@
  .info__item-address {
   order: 2;
   margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
  }
 
  .info__item-mail {
   order: 3;
   margin-right: 110px;
+  padding-bottom: 0;
+  margin-bottom: 0;
  }
 
  .info__item-title {
@@ -170,5 +214,19 @@
  .info__item-contact {
   text-align: left;
   margin-top: 24px;
+  padding-bottom: 0;
+  margin-bottom: 0;
  }
+
+ .info__triangle {
+    top: -4px;
+    left: -100px;
+    height: 145px;
+    width: 1400px;
+  }
+
+  .info__map-marker {
+    top: 293px;
+    left: 582px;
+  }
 }
