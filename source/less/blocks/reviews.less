@@ -10,7 +10,6 @@
   margin-top: -52px;
 }
 
-
 .reviews__user-name {
   font-size: 18px;
   font-weight: bold;
@@ -26,61 +25,54 @@
   max-width: 271px;
 }
 
-
 .reviews__icon,
 .reviews__user-data {
   display: none;
 }
 
-
 .reviews__input {
   display: none;
 }
 
-
 .reviews__slider-inactive {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 17px;
+  opacity: 0.3;
+  background-color: #283645;
+  margin-top: 3px;
+  &:hover {
+    background-color: #7e868f;
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.reviews__slider-active {
+  display: inline-block;
+  vertical-align: top;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background: #ffffff;
+  border: 2px solid #283645;
+  &:hover {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     margin-right: 17px;
     opacity: 0.3;
-    background-color: #283645;
+    background-color: #7e868f;
     margin-top: 3px;
-
-    &:hover {
-      background-color: #7e868f;
-    }
-
-    &:active {
-      background-color: #e9ebec;
-    }
-}
-
-.reviews__slider-active {
-    display: inline-block;
-    vertical-align: top;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    margin-right: 12px;
-    background: #ffffff;
-    border: 2px solid #283645;
-
-    &:hover {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      margin-right: 17px;
-      opacity: 0.3;
-      background-color: #7e868f;
-      margin-top: 3px;
-    }
-
-    &:active {
-      background-color: #e9ebec;
-    }
+  }
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
 .reviews__icon-svg {
@@ -95,9 +87,6 @@
   background-color: #f2f2f2;
   padding-left: 128px;
 }
-
-
-
 
 @media (min-width: @tablet-width) {
   .reviews__user-data {
@@ -135,16 +124,15 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .reviews__icon {
-  display: block;
- }
+    display: block;
+  }
 
- .reviews__icon-svg {
-  display: block;
-  padding-top: 21px;
-}
+  .reviews__icon-svg {
+    display: block;
+    padding-top: 21px;
+  }
 
   .reviews__text {
     margin-top: 41px;
@@ -173,13 +161,12 @@
   .reviews__icon-right:hover,
   .reviews__icon-left:hover {
     fill: #7e868f;
-
     &:active {
       fill: #ffffff;
     }
   }
 
-    .reviews__text-wrap {
+  .reviews__text-wrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
