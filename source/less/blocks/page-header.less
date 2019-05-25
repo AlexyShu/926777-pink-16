@@ -1,13 +1,21 @@
 .page-header {
   display: flex;
-  background-color: #283645;
   flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .page-header__wrapper {
   display: flex;
   height: 69px;
   border-bottom: 1px solid #000000;
+  background-color: #283645;
+  .menu-closed & {
+    background-color: rgba(0,0,0, 0.3);
+  }
 }
 
 .page-header__btn {
