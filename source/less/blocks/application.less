@@ -40,7 +40,7 @@
   padding-bottom: 26px;
 }
 
-.application__image-background {
+.application__pic{
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: #283645;
   height: 396px;
@@ -73,9 +73,6 @@
   display: none;
 }
 
-.application__pic {
-  display: none;
-}
 
 @media (min-width: @tablet-width) {
   .application {
@@ -95,17 +92,7 @@
     }
   }
 
-  .application__pic {
-    display: block;
-  }
-
-  .application_pic-img {
-    position: relative;
-    margin-top: 73px;
-  }
-
   .application__list {
-    position: absolute;
     justify-content: flex-start;
     margin-left: 27px;
     margin-top: 367px;
@@ -126,10 +113,6 @@
   margin-top: 12px;
   margin-top: 455px;
  }
-
-  .application__image-background {
-    display: none;
-  }
 
   .application__slogan {
     position: absolute;
@@ -157,6 +140,12 @@
     margin-top: 265px;
     width: 300px;
   }
+
+  .application__image {
+    margin-top: 73px;
+    width: 660px;
+    height: 545px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -171,11 +160,9 @@
     }
   }
 
-  .application_pic-img {
-    width: 1042px;
-    height: 645px;
-    margin-left: 151px;
-    margin-top: 99px;
+  .application__pic {
+    background-image: none;
+    background: none;
   }
 
   .application__title {
@@ -205,5 +192,12 @@
     margin-top: 576px;
     margin-left: 133px;
     margin-right: 704px;
+  }
+
+  .application__image {
+    margin-top: 98px;
+    width: 1050px;
+    height: 643px;
+    margin-left: 148px;
   }
 }
