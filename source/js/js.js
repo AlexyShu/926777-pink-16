@@ -3,7 +3,7 @@ var btn_on = document.querySelector(".page-header__taggle-on");
 var popup = document.querySelector(".page-header");
 
 btn_on.addEventListener("click", function(evt) {
-  popup.classList.remove("menu-active");
+  popup.classList.add("menu-active");
   btn_on.classList.add("page-header__taggle-on--hidden");
   btn_off.classList.add("page-header__taggle-off--show");
 });

@@ -12,7 +12,7 @@
   margin-top: 28px;
   margin-left: 19px;
   margin-right: 20px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   color: #ffffff;
   font-weight: bold;
   font-size: 18px;
@@ -36,19 +36,19 @@
   justify-content: center;
   align-items: center;
   margin-left: 45px;
-  margin-right: 22px;
-  padding-bottom: 26px;
+  margin-right: 45px;
+  margin-top: 0;
+  padding-bottom: 32px;
 }
 
-.application__pic{
+.application__pic {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: #283645;
   height: 396px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 
-  @media
-  (min-resolution: @retina-dpi),
-  (min-resolution: @retina-dppx) {
+  @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
     background-image: url(../img/bg-back-mobile@2x.jpg);
     background-size: cover;
   }
@@ -62,11 +62,12 @@
   display: flex;
   align-items: center;
   align-content: space-between;
+  margin-bottom: 11px;
 }
 
 .application__item {
   margin-left: 17px;
-  margin-right: 18px;
+  margin-right: 19px;
 }
 
 .application__slogan {
@@ -81,38 +82,37 @@
     justify-content: flex-start;
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center;
-    height: 619px;
+    height: 727px;
     margin-bottom: 40px;
 
-    @media
-  (min-resolution: @retina-dpi),
-  (min-resolution: @retina-dppx) {
-    background-image: url(../img/bg-back-tablet@2x.jpg);
-    background-size: cover;
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: cover;
     }
   }
 
   .application__list {
-    justify-content: flex-start;
+    position: absolute;
     margin-left: 27px;
-    margin-top: 367px;
+    margin-top: 478px;
   }
 
- .application__item {
-   margin-right: 35px;
-   margin-left: 0;
- }
+  .application__item {
+    margin-right: 35px;
+    margin-left: 0;
+    margin-top: 2px;
+  }
 
-.application__info {
-  position: absolute;
-  justify-content: flex-start;
-  font-size: 18px;
-  line-height: 24px;
-  margin-right: 317px;
-  margin-left: 22px;
-  margin-top: 12px;
-  margin-top: 455px;
- }
+  .application__info {
+    position: absolute;
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 317px;
+    margin-left: 22px;
+    margin-top: 569px;
+  }
 
   .application__slogan {
     position: absolute;
@@ -128,23 +128,25 @@
   }
 
   .application__title {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 115px;
+    margin-bottom: 0;
+    margin-left: -5px;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
+    line-height: 48px;
   }
 
   .application__btn {
     position: absolute;
-    margin-top: 265px;
+    margin-top: 376px;
     width: 300px;
   }
 
   .application__image {
-    margin-top: 73px;
+    margin-top: 179px;
     width: 660px;
-    height: 545px;
+    height: 547px;
   }
 }
 
@@ -153,10 +155,9 @@
     background-image: url(../img/bg-back-desktop@1x.jpg);
     height: 742px;
 
-    @media
-  (min-resolution: @retina-dpi),
-  (min-resolution: @retina-dppx) {
-    background-image: url(../img/bg-back-desktop@2x.jpg);
+    @media (min-resolution: @retina-dpi),
+      (min-resolution: @retina-dppx) {
+      background-image: url(../img/bg-back-desktop@2x.jpg);
     }
   }
 
