@@ -13,7 +13,7 @@
   height: 69px;
   border-bottom: 1px solid #000000;
   background-color: #283645;
-  .menu-closed & {
+  .menu-active & {
     background-color: rgba(0,0,0, 0.3);
   }
 }
@@ -26,7 +26,7 @@
 }
 
 .page-header__taggle-on {
-  display: none;
+  display: block;
   width: 50px;
   height: 24px;
   cursor: pointer;
@@ -47,12 +47,12 @@
   }
 }
 
-.page-header__taggle-on--show {
-  display: block;
+.page-header__taggle-on--hidden{
+  display: none;
 }
 
 .page-header__taggle-off {
-  display: block;
+  display: none;
   width: 34px;
   height: 18px;
   fill: #ffffff;
@@ -66,8 +66,8 @@
   }
 }
 
-.page-header__taggle-off--hidden {
-  display: none;
+.page-header__taggle-off--show {
+  display: block;
 }
 
 .page-header__logo {
