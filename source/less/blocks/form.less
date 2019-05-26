@@ -13,12 +13,13 @@
 
 .form__data-style {
   margin-left: 21px;
+  margin-bottom: 13px;
 }
 
 .form__user-data {
   display: flex;
   flex-direction: column;
-  margin-bottom: 39px;
+  margin-bottom: 27px;
 }
 
 .form__achievement-title,
@@ -32,6 +33,7 @@
   border: none;
   max-width: 243px;
   margin-left: 35px;
+  letter-spacing: 0.2px;
 }
 
 .form__app-title {
@@ -48,16 +50,19 @@
   line-height: 30px;
   text-align: left;
   color: #283645;
+  letter-spacing: 0.2px;
 }
 
 .form__user-name {
   width: 280px;
   border: solid 2px #e5e5e5;
   margin-bottom: 2px;
+  margin-top: 5px;
   margin-left: 0;
   padding-top: 15px;
   padding-left: 20px;
   padding-bottom: 15px;
+  letter-spacing: 0.4px;
 
   &:hover {
     border: solid 2px #000000;
@@ -109,9 +114,10 @@
   margin-bottom: 16px;
   margin-left: 7px;
   margin-top: 5px;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 20px;
   padding-bottom: 15px;
+  letter-spacing: 0.4px;
 
   &:hover {
     border: solid 2px #000000;
@@ -124,9 +130,9 @@
 
 .form__app {
   background-color: #f2f2f2;
-  padding-top: 38px;
+  padding-top: 39px;
   padding-bottom: 0;
-  margin-top: 12px;
+  margin-top: 17px;
 }
 
 .form__app-item {
@@ -148,6 +154,7 @@
   padding-top: 14px;
   padding-bottom: 123px;
   padding-left: 18px;
+  letter-spacing: 0.4px;
 }
 
 .form__comment-title {
@@ -157,11 +164,13 @@
   color: #d22856;
   text-transform: uppercase;
   margin-left: 57px;
+  letter-spacing: 0.2px;
 }
 
 .form__checkbox-item {
   position: relative;
-  padding: 3px 0 3px 75px;
+  padding: 3px 0 3px 71px;
+  letter-spacing: 0.3px;
 }
 
 .form__checkbox+.form__checkbox-text::before {
@@ -357,6 +366,7 @@
   font-weight: bold;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 22px;
 
   &:hover {
@@ -384,7 +394,8 @@
   color: #283645;
   text-transform: uppercase;
   margin-left: 68px;
-  margin-bottom: 57px;
+  margin-bottom: 55px;
+  letter-spacing: 0.2px;
 }
 
 .form__marker {
@@ -405,7 +416,7 @@
     justify-content: flex-start;
     align-items: center;
     margin-left: 0;
-    margin-bottom: 49px;
+    margin-bottom: 44px;
   }
 
   .form__user-item {
@@ -416,12 +427,13 @@
 
   .form__user-name {
     flex-grow: 1;
+    letter-spacing: 0.4px;
   }
 
   .form__user-data {
     margin-right: 20px;
     order: 1;
-    margin-bottom: 0;
+    margin-bottom: 3px;
   }
 
   .form__conteiner {
@@ -455,12 +467,13 @@
     margin-right: 18px;
     margin-left: 18px;
     margin-bottom: 67px;
+    margin-top: 31px;
   }
 
   .form__btn-block {
     order: 6;
     display: flex;
-    margin-bottom: 31px;
+    margin-bottom: 11px;
   }
 
   .form__border-achievement,
@@ -493,7 +506,7 @@
     background-color: #e5e5e5;
     width: 60px;
     padding: 0;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
   }
 
   .form__contact-wrap {
@@ -514,7 +527,7 @@
   }
 
   .form__app-title {
-    max-width: 368px;
+    max-width: 748px;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -523,8 +536,8 @@
 
   .form__border-app {
     padding-left: 39px;
-    padding-right: 208px;
-    padding-bottom: 14px;
+    padding-right: 201px;
+    padding-bottom: 16px;
     margin-top: 7px;
     margin-bottom: 22px;
   }
@@ -534,7 +547,7 @@
   }
 
   .form__contact-item {
-    margin-bottom: 65px;
+    margin-bottom: 69px;
     margin-left: 48px;
     min-width: 439px;
   }
@@ -588,13 +601,19 @@
   .form__border-comment {
     margin-left: 1px;
   }
+
+  .form__app-item {
+    padding-top: 1px;
+    margin-left: 21px;
+    padding-bottom: 44px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form__user-data {
     margin-left: 111px;
     margin-right: 633px;
-    padding-top: 28px;
+    padding-top: 26px;
   }
 
   .form__conteiner {
@@ -609,7 +628,8 @@
   }
 
   .form__app-item {
-    margin-left: 76px;
+    margin-left: 75px;
+    padding-bottom: 43px;
   }
 
   .form__border-app {
@@ -620,7 +640,7 @@
 
   .form__app-title {
     max-width: 379px;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
   }
 
   .form__contact-info {
@@ -679,6 +699,7 @@
   .form__border-comment {
     margin-left: 113px;
     margin-right: 0;
+    margin-top: 2px;
   }
 
   .form__comment-title {
@@ -693,7 +714,7 @@
 
   .form__btn-block {
     margin-left: 110px;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
   }
 
   .form__marker-text {
@@ -708,11 +729,13 @@
     color: #283645;
     text-transform: uppercase;
     margin-left: 256px;
+    margin-top: 18px;
+    letter-spacing: 0.3px;
   }
 
   .form__stilebox-1 {
     order: 1;
-    margin-right: 6px;
+    margin-right: 0;
   }
 
   .form__stilebox-2 {
@@ -721,11 +744,12 @@
 
   .form__stilebox-3 {
     order: 3;
+    margin-left: 55px;
   }
 
   .form__stilebox-4 {
     order: 4;
-    margin-right: 42px;
+    margin-right: 38px;
   }
 
   .form__stilebox-5 {
@@ -735,5 +759,10 @@
 
   .form__stilebox-6 {
     order: 6;
+    margin-left: 55px;
+  }
+
+  .form__checkbox-item {
+    padding-left: 61px;
   }
 }
