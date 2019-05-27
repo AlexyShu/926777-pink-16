@@ -56,7 +56,7 @@
   margin-bottom: 0;
 }
 
-.info-map {
+.info__map {
   background-image: url(../img/bg-map-mobile@1x.png);
   background-color: #ffffff;
   min-height: 199px;
@@ -86,6 +86,10 @@
   left: 142px;
 }
 
+.info__map iframe {
+  border: none;
+}
+
 @media (min-width: @tablet-width) {
   .info {
     padding-top: 0;
@@ -98,7 +102,7 @@
     margin-left: 42px;
   }
 
-  .info-map {
+  .info__map {
     background-image: url(../img/bg-map-tablet@1x.jpg);
     height: 359px;
 
@@ -147,7 +151,7 @@
     left: 312px;
   }
 
-  .info-map iframe {
+  .info__map iframe {
     width: 660px;
     height: 369px;
   }
@@ -162,9 +166,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .info-map {
+  .info__map {
     background-image: url(../img/bg-map-desktop@1x.jpg);
-    height: 519px;
+    height: 485px;
     margin-bottom: 30px;
 
     @media (min-resolution: @retina-dpi),
@@ -179,7 +183,7 @@
     font-weight: 300;
     line-height: 63px;
     text-align: center;
-    margin: 4px 311px 12px 313px;
+    margin: 4px 250px 12px 248px;
   }
 
   .info {
@@ -190,26 +194,28 @@
     justify-content: space-around;
     margin-bottom: 0;
     margin-top: 52px;
-    padding-left: 19px;
+    margin-left: 0;
+    padding-left: 0px;
     padding-right: 22px;
   }
 
   .info__item-phone {
     order: 1;
-    margin-left: 91px;
-    margin-right: 57px;
+    margin-left: 40px;
+    margin-right: 75px;
   }
 
   .info__item-address {
     order: 2;
-    margin-top: 0;
     padding-bottom: 0;
+    margin-top: 0;
     margin-bottom: 0;
+    margin-right: 59px;
   }
 
   .info__item-mail {
     order: 3;
-    margin-right: 113px;
+    margin-right: 0;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -219,30 +225,33 @@
   }
 
   .info__item-contact {
-    text-align: left;
     margin-top: 24px;
-    padding-bottom: 0;
+    padding-bottom: 33px;
     margin-bottom: 0;
   }
 
   .info__triangle {
-    top: -4px;
-    left: 0px;
-    height: 132px;
-    width: 1200px;
+    top: -51px;
+    left: 0;
+    height: 199px;
+    width: 960px;
   }
 
   .info__map-marker {
-    top: 280px;
-    left: 582px;
+    top: 246px;
+    left: 462px;
   }
 
-  .info-map iframe {
+  .info__map iframe {
     width: 1200px;
-    height: 519px;
+    height: 485px;
   }
 
   .info__item-title {
     margin: 0 0 27px 2px;
+  }
+
+  .info__decor {
+    text-align: center
   }
 }

@@ -97,7 +97,6 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     height: 110px;
-    max-width: 660px;
   }
 
   .page-header__btn {
@@ -127,15 +126,17 @@
   }
 
   .page-header {
+    position: relative;
     flex-direction: row;
     background: rgba(0, 0, 0, 0.3);
     width: 100%;
   }
 
   .page-header__logo {
-    width: 280px;
+    width: 167px;
     margin-top: 28px;
-    padding-left: 110px;
+    padding-left: 0;
+    margin-left: 11px;
   }
 
   .page-header__logo-tablet {
