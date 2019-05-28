@@ -1,3 +1,6 @@
+document.querySelector("body").classList.remove("no-js");
+
+
 var btn_off = document.querySelector(".page-header__taggle-off");
 var btn_on = document.querySelector(".page-header__taggle-on");
 var popup = document.querySelector(".page-header");

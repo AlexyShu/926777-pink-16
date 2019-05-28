@@ -6,6 +6,10 @@
   .menu-active & {
     display: block;
   }
+
+  .no-js & {
+    display: block;
+  }
 }
 
 .main-navigation__list {
@@ -13,6 +17,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+  list-style: none;
 }
 
 .main-navigation__link,
@@ -60,7 +65,7 @@
 
   .main-navigation {
     display: block;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     min-height: 110px;
     margin: 0;
   }

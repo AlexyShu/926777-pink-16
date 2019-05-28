@@ -6,6 +6,12 @@
   left: 0;
   z-index: 1;
   width: 100%;
+
+  .no-js & {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 }
 
 .page-header__wrapper {
@@ -17,6 +23,10 @@
   .menu-active & {
     background-color: #283645;
   }
+
+  .no-js & {
+    background-color: #283645;
+  }
 }
 
 .page-header__btn {
@@ -24,7 +34,13 @@
   margin-right: 20px;
   margin-top: 21px;
   cursor: pointer;
+
+  .no-js & {
+    display: none;
+  }
 }
+
+
 
 .page-header__taggle-on {
   display: block;
@@ -123,12 +139,12 @@
 
   .page-header__wrapper {
     border: none;
+    background-color: transparent;
   }
 
   .page-header {
     position: relative;
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.3);
     width: 100%;
   }
 
