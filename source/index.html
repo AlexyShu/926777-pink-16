@@ -420,12 +420,7 @@
               <p class="info__item-contact info__decor"> ул. Большая <br> Конюшенная, 19/8</p>
           </ul>
         </div>
-        <div class="info__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715723475!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558773821601!5m2!1sru!2sru" width="320" height="199" allowfullscreen></iframe>
-          <svg class="info__map-marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983" height="35.983" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
-            <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"></circle>
-            <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"></circle>
-          </svg>
+        <div class="info__map" id="map">
         </div>
       </section>
     </main>
@@ -513,5 +508,23 @@
     </div>
     <script src="js/js.js"></script>
     <script src="js/picturefill.js"></script>
+    <script>
+      function initMap () {
+        var pos = {lat:59.938808 ,lng:30.323026};
+        var opt = {
+          center: {lat:59.938808 ,lng:30.323026},
+          zoom: 15,
+        };
+         var map = new google.maps.Map(document.getElementById('map'), opt);
+         var marker = new google.maps.Marker({
+          position: pos,
+          map: map,
+          title: "Я тут :)",
+          icon: "../img/icon-map-marker.svg"
+         });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvNpk5mmP1QgSw1CRA_nTfXv5oB0ctEr0&callback=initMap"
+    async defer></script>
   </body>
 </html>
