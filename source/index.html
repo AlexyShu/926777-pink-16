@@ -5,6 +5,12 @@
     <title>PINK</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="/fonts/opensans.woff" as="font">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/fonts/opensanslight.woff" as="font">
+  <link rel="preload" href="/fonts/opensanslight.woff2" as="font">
   </head>
   <body class="no-js">
     <div style="display:none">
@@ -179,7 +185,9 @@
             <p class="advantage__slogan-item2">Нам есть, что вам предложить!</p>
           </div>
         </div>
-        <div class="advantage_parts">
+        <div class="advantage__triangle">
+        </div>
+        <div class="advantage__parts">
           <div class="advantage__iphones">
             <div class="advantage__iphone-wrap">
               <div class="advantage__iphone1">
@@ -206,11 +214,12 @@
               </div>
             </div>
           </div>
+
           <div class="wrap">
             <ul class="advantage__list">
               <li class="advantage__item1">
                 <h1 class="advantage__title">Поднимает настроение</h1>
-                <p class="advantage__text advantage__text1-style">Приложение позволит вам победить осеннюю хандру и депрессию       буквально в несколько кликов!
+                <p class="advantage__text advantage__text1-style">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                 </p>
               </li>
               <li class="advantage__item2">
@@ -219,7 +228,7 @@
               </li>
               <li class="advantage__item3">
                 <h1 class="advantage__title advantage__title-desctop">Заводит новых друзей</h1>
-                <p class="advantage__text advantage__text3-style">Ставьте лайки, комментируйте, делитесь фотографиями с       друзьями и заводите новых</p>
+                <p class="advantage__text advantage__text3-style">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
           </div>
@@ -234,7 +243,7 @@
             <div class="reseach__info">
               <h2 class="reseach__title">Эффект &#160; на 24 часа!</h2>
               <h2 class="reseach__title-desktop">Эффект на 24 часа!</h2>
-              <p class="reseach__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые&#160;сутки!</p>
+              <p class="reseach__text">Британские ученые провели исследования и доказали, что&#160;положительный эффект от&#160;использования приложения длится целые&#160;сутки!</p>
               <a class="reseach__link" href="">Узнать больше об исследовании</a>
             </div>
           </div>
@@ -297,6 +306,9 @@
         </section>
 
       <section class="features">
+        <div class="features__triangle">
+        </div>
+
         <div class="wrap">
           <div class="features_wrap">
             <table class="features__table">
@@ -505,5 +517,6 @@
       </div>
     </div>
     <script src="js/js.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 .advantage {
   color: #000000;
+  overflow-x: hidden;
 }
 
 .advantage__slogan {
@@ -34,7 +35,7 @@
   text-align: center;
 }
 
-.advantage_parts {
+.advantage__parts {
   display: flex;
   flex-direction: column;
 }
@@ -46,9 +47,9 @@
   align-content: center;
   text-align: center;
   background-color: #f2f2f2;
-  padding-top: 19px;
+  padding-top: 0;
   padding-left: 25px;
-  padding-right: 37px;
+  padding-right: 33px;
   margin: 0;
   order: 1;
   list-style: none;
@@ -77,22 +78,27 @@
 }
 
 .advantage__slogan-item1 {
-  margin: 21px 54px 19px 55px;
+  margin: 7px 54px 19px 55px;
 }
 
 .advantage__slogan-item2 {
   margin-top: 8px;
   padding-left: 56px;
   padding-right: 57px;
-  padding-bottom: 84px;
+  padding-bottom: 32px;
   margin-bottom: 0;
+}
+
+.advantage__triangle {
   background: url(../img/bg-triangle-white.svg) no-repeat;
-  background-size: 1598px 118px;
+  background-size: contain;
   background-color: #f2f2f2;
+  width: 100%;
+  height: 70px;
 }
 
 @media (min-width: @tablet-width) {
-  .advantage_parts {
+  .advantage__parts {
     flex-direction: row;
     background-color: #f2f2f2;
   }
@@ -103,8 +109,8 @@
 
   .advantage__iphone3 {
     position: absolute;
-    top: -60px;
-    left: -659px;
+    top: -94px;
+    left: -664px;
   }
 
   .advantage__iphones {
@@ -152,12 +158,9 @@
     margin-top: -2px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 84px;
+    padding-bottom: 50px;
     margin-bottom: 0;
     line-height: 47px;
-    background: url(../img/bg-triangle-white.svg) no-repeat;
-    background-size: 2412px 193px;
-    background-color: #f2f2f2;
   }
 
   .advantage__title {
@@ -174,7 +177,7 @@
   }
 
   .advantage__item1 {
-    padding-top: 29px;
+    padding-top: 0;
     margin-bottom: 25px;
   }
 
@@ -199,6 +202,10 @@
   .advantage__text3-style {
     letter-spacing: 0.4px;
   }
+
+  .advantage__triangle {
+    height: 64px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -212,18 +219,18 @@
 
   .advantage__iphone1 {
     position: absolute;
-    top: -584px;
+    top: -585px;
     left: -465px;
   }
 
   .advantage__iphone2 {
     position: absolute;
-    top: -584px;
+    top: -585px;
     left: -141px;
   }
 
   .advantage__iphone3 {
-    top: -584px;
+    top: -585px;
     left: 178px;
   }
 
@@ -242,10 +249,10 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 205px;
+    padding-top: 168px;
   }
 
-  .advantage_parts {
+  .advantage__parts {
     flex-direction: column;
     background-color: #f2f2f2;
   }
@@ -285,14 +292,15 @@
   }
 
   .advantage__item1 {
-    width: 260px;
+    width: 248px;
     padding-top: 0px;
-    margin-left: 30px;
+    margin-left: 33px;
   }
 
   .advantage__item2 {
     width: 250px;
     margin-right: 0;
+    margin-left: 4px;
   }
 
   .advantage__item3 {
@@ -307,10 +315,8 @@
   }
 
   .advantage__slogan-item2 {
-    padding: 0 257px 152px 257px;
-    background-size: 3683px 289px;
+    padding: 0 257px 90px;
     line-height: 58px;
-
   }
 
   .advantage__title-desctop {
@@ -319,6 +325,14 @@
   }
 
   .advantage__text2-style {
-    padding-left: 12px;
+    padding-left: 8px;
+  }
+
+  .advantage__text3-style {
+    padding-left: 5px;
+  }
+
+  .advantage__triangle {
+    height: 100px;
   }
 }
