@@ -23,14 +23,13 @@
   font-weight: bold;
   line-height: 10px;
   margin-bottom: 19px;
-  margin-left: 10px;
+  margin-left: 7px;
   margin-top: 16px;
 }
 
 .advantage__text {
-  letter-spacing: 0.2px;
   margin-bottom: 22px;
-  margin-left: 7px;
+  margin-left: 6px;
   color: #283645;
   text-align: center;
 }
@@ -38,6 +37,17 @@
 .advantage__parts {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20vw;
+    background: url(../img/bg-triangle-white.svg) 60% 0 no-repeat;
+  }
 }
 
 .advantage__list {
@@ -47,9 +57,9 @@
   align-content: center;
   text-align: center;
   background-color: #f2f2f2;
-  padding-top: 0;
+  padding-top: 98px;
   padding-left: 25px;
-  padding-right: 33px;
+  padding-right: 30px;
   margin: 0;
   order: 1;
   list-style: none;
@@ -85,22 +95,22 @@
   margin-top: 8px;
   padding-left: 56px;
   padding-right: 57px;
-  padding-bottom: 32px;
+  padding-bottom: 4px;
   margin-bottom: 0;
 }
 
-.advantage__triangle {
-  background: url(../img/bg-triangle-white.svg) no-repeat;
-  background-size: contain;
-  background-color: #f2f2f2;
-  width: 100%;
-  height: 70px;
+.advantage__text3-style {
+  margin-left: 3px;
 }
 
 @media (min-width: @tablet-width) {
   .advantage__parts {
     flex-direction: row;
     background-color: #f2f2f2;
+
+    &::before {
+      background: url(../img/bg-triangle-white.svg) 76% 0 no-repeat;
+    }
   }
 
   .advantage__iphone-wrap {
@@ -109,8 +119,8 @@
 
   .advantage__iphone3 {
     position: absolute;
-    top: -94px;
-    left: -664px;
+    top: 3px;
+    left: -660px;
   }
 
   .advantage__iphones {
@@ -120,7 +130,7 @@
   .advantage__list {
     width: 329px;
     justify-content: space-between;
-    padding: 0;
+    padding: 73px 0 0;
     margin-left: 330px;
     order: 2;
     text-align: left;
@@ -131,7 +141,7 @@
     height: 483px;
     margin-left: 20px;
     margin-right: 0;
-    margin-top: 27px;
+    margin-top: 10px;
   }
 
   .advantage__item-image {
@@ -158,7 +168,7 @@
     margin-top: -2px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     margin-bottom: 0;
     line-height: 47px;
   }
@@ -191,20 +201,7 @@
   }
 
   .advantage__text1-style {
-    max-width: 293px;
-    letter-spacing: 0.2px;
-  }
-
-  .advantage__text2-style {
-    max-width: 296px;
-  }
-
-  .advantage__text3-style {
-    letter-spacing: 0.4px;
-  }
-
-  .advantage__triangle {
-    height: 64px;
+    max-width: 301px;
   }
 }
 
@@ -249,7 +246,7 @@
     margin: 0;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 168px;
+    padding-top: 273px;
   }
 
   .advantage__parts {
@@ -315,7 +312,7 @@
   }
 
   .advantage__slogan-item2 {
-    padding: 0 257px 90px;
+    padding: 0 257px 84px;
     line-height: 58px;
   }
 
@@ -324,15 +321,16 @@
     margin-right: 15px
   }
 
+  .advantage__text1-style {
+    padding-left: 4px;
+  }
+
   .advantage__text2-style {
     padding-left: 8px;
   }
 
   .advantage__text3-style {
-    padding-left: 5px;
-  }
-
-  .advantage__triangle {
-    height: 100px;
+    padding-left: 15px;
+    max-width: 250px;
   }
 }

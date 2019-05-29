@@ -3,6 +3,18 @@
   padding-bottom: 34px;
   background: none;
   position: relative;
+  padding-top: 6vw;
+  overflow-x: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20vw;
+    background: url(../img/bg-triangle-white.svg) 67% 0 no-repeat;
+  }
 }
 
 .features_wrap {
@@ -51,7 +63,7 @@
 
 .features__line {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: normal;
   text-transform: uppercase;
   margin-left: 17px;
 }
@@ -65,8 +77,8 @@
 
 .features__table {
   position: absolute;
-  top: -31px;
-  left: -394px;
+  top: 39px;
+  left: -397px;
   right: 18px;
   width: 300%;
   margin-bottom: 43px;
@@ -83,7 +95,7 @@
 
 .features__slider {
   margin-left: 132px;
-  padding-top: 345px;
+  padding-top: 419px;
 }
 
 .features__input {
@@ -139,7 +151,7 @@
 }
 
 .features_svg-pink {
-  margin-left: 77px;
+  margin-left: 73px;
 }
 
 .features_svg-smile {
@@ -147,25 +159,22 @@
 }
 
 .features_svg-comment {
-  margin-left: 99px;
+  margin-left: 96px;
 }
 
-.features__triangle {
-  background: url(../img/bg-triangle-white.svg) no-repeat;
-  background-size: contain;
-  background-color: #f2f2f2;
-  width: 100%;
-  height: 70px;
-}
 
 @media (min-width: @tablet-width) {
   .features {
-    padding-bottom: 305px;
+    padding-bottom: 338px;
     background-color: #f2f2f2;
+
+    &::after {
+      background: url(../img/bg-triangle-white.svg) 94% 0 no-repeat;
+    }
   }
 
   .features__table {
-    top: -34px;
+    top: -2px;
     left: 18px;
     width: 624px;
     text-align: center;
@@ -182,10 +191,6 @@
     padding-top: 6px;
   }
 
-  .features__title {
-    padding-top: 0;
-    margin-top: 5px;
-  }
 
   .features__price {
     padding-bottom: 6px;
@@ -222,18 +227,29 @@
     width: 61px;
     height: 61px;
   }
+
+  .features__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .features__price {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .features {
     background-color: #f2f2f2;
-    padding-bottom: 418px;
+    padding-bottom: 463px;
     margin-bottom: 59px;
   }
 
   .features__table {
     width: 942px;
-    top: -11px;
+    top: 36px;
     left: 8px;
   }
 
@@ -281,10 +297,5 @@
   .features__box-mobile {
     text-align: center;
     padding-right: 59px;
-  }
-
-
-  .features__triangle {
-    height: 100px;
   }
 }

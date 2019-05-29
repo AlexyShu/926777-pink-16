@@ -63,28 +63,32 @@
   background-image: url(../img/bg-map-mobile@1x.png);
   background-color: #f3f1ea;
   min-height: 199px;
+  position: relative;
 
   @media (min-resolution: @retina-dpi),
     (min-resolution: @retina-dppx) {
     background-image: url(../img/bg-map-mobile@2x.jpg);
     background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: 0;
+      right: 0;
+      height: 20vw;
+      background: url(../img/bg-triangle-white-footer.svg) 50% 0 no-repeat;
+    }
   }
 }
 
 .info__item-address {
-  padding-bottom: 20px;
-}
-
-.info__triangle {
-  position: absolute;
-  top: 406px;
-  left: 0;
-  width: 100%;
+  padding-bottom: 0;
 }
 
 .info__map-marker {
   position: absolute;
-  top: 503px;
+  top: 110px;
   left: 142px;
 }
 
@@ -107,12 +111,16 @@
 
   .info__map {
     background-image: url(../img/bg-map-tablet@1x.jpg);
-    height: 359px;
+    height: 380px;
 
     @media (min-resolution: @retina-dpi),
       (min-resolution: @retina-dppx) {
       background-image: url(../img/bg-map-tablet@2x.jpg);
       background-size: cover;
+
+      &::before {
+        background: url(../img/bg-triangle-white-footer.svg) 60% 0 no-repeat;
+      }
     }
   }
 
@@ -143,27 +151,24 @@
   }
 
   .info__map-marker {
-    top: 600px;
+    top: 197px;
     left: 312px;
   }
 
   .info__map iframe {
-    height: 359px;
+    height: 380px;
   }
 
   .info__item-title {
-    margin: 0px 0px 8px 2px;
+    margin: 0 0 7px 2px;
   }
 
   .info__mail {
     margin-bottom: 22px;
   }
 
-  .info__triangle {
-    top: 397px;
-    left: 0;
-    width: 660px;
-    height: auto;
+  .info__item-contact {
+    font-weight: 300;
   }
 }
 
@@ -227,14 +232,13 @@
   }
 
   .info__item-contact {
-    margin-top: 24px;
     padding-bottom: 33px;
     margin-bottom: 0;
   }
 
 
   .info__map-marker {
-    top: 572px;
+    top: 245px;
     left: 462px;
   }
 
@@ -248,12 +252,5 @@
 
   .info__decor {
     text-align: center
-  }
-
-  .info__triangle {
-    top: 306px;
-    left: 0;
-    width: 100%;
-    height: auto;
   }
 }
