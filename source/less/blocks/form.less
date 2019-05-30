@@ -61,7 +61,7 @@
   padding-left: 20px;
   padding-bottom: 15px;
 
-&:hover {
+  &:hover {
     border: solid 2px #000000;
   }
 
@@ -177,7 +177,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__checkbox:hover+.form__checkbox-text::before {
@@ -190,7 +189,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__checkbox:active+.form__checkbox-text::before {
@@ -203,7 +201,11 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
+}
+
+.form__checkbox:focus+.form__checkbox-text::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__checkbox:checked+.form__checkbox-text::before {
@@ -216,7 +218,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__checkbox:hover:checked+.form__checkbox-text::before {
@@ -229,7 +230,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__checkbox:active:checked+.form__checkbox-text::before {
@@ -242,7 +242,11 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
+}
+
+.form__checkbox:focus:checked+.form__checkbox-text::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__user-app {
@@ -275,7 +279,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__radio:active+.form__radio-text::before {
@@ -289,7 +292,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__radio:checked+.form__radio-text::before {
@@ -303,7 +305,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__radio:hover:checked+.form__radio-text::before {
@@ -317,7 +318,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__radio:active:checked+.form__radio-text::before {
@@ -331,7 +331,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  ;
 }
 
 .form__border-achievement,
